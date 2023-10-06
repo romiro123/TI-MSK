@@ -1,0 +1,35 @@
+.title {
+  font-family: furore;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+
+  &--hero {
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 4px;
+  }
+
+  &--section {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  &--dark {
+    color: var(--bg-main);
+  }
+
+  &--subtitle {}
+
+}
+
+.subtitle {
+  font-family: AdventPro;
+  // font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+
+  &--dark {
+    color: var(--bg-main);
+  }
+}

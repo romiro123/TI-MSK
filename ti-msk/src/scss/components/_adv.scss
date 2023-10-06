@@ -1,0 +1,20 @@
+.adv {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__item {
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    color: var(--light);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+  }
+}

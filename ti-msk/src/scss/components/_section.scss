@@ -1,0 +1,15 @@
+.section {
+  &--black {
+    background-color: var(--dark);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  &__content {
+    border-radius: 35px;
+    background-color: #000000;
+    padding: var(--content-offset);
+  }
+}

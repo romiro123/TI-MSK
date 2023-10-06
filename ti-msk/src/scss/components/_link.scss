@@ -1,0 +1,13 @@
+.link {
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+
+  &--big {
+    font-weight: 700;
+    color: var(--light);
+    background-color: var(--accent);
+    font-size: 18px;
+    padding: 15px 50px;
+  }
+}

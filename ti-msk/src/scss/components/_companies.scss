@@ -1,0 +1,16 @@
+.companies {
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    height: 100px;
+    max-width: 100%;
+  }
+}
