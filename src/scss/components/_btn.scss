@@ -1,0 +1,37 @@
+.btn {
+  &--main {
+    font-weight: 700;
+    color: var(--light);
+    background-color: var(--accent);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 15px 50px;
+  }
+
+
+
+
+  &--prev,
+  &--next {
+    position: static;
+    display: flex;
+
+    svg {
+      flex-shrink: 0;
+      width: 35px;
+      height: 35px;
+      border: 2px solid var(--light);
+      border-radius: 100%;
+      fill: none;
+      background-color: transparent;
+      stroke: var(--light);
+      stroke-linecap: round;
+      stroke-width: 2px;
+      transition: stroke 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+  }
+
+  &--prev {
+    transform: scale(-1, 1);
+  }
+}

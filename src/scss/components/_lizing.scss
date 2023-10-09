@@ -1,0 +1,49 @@
+.lizing {
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+
+  &__wrapp {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__left {
+
+    max-width: 50%;
+  }
+
+  &__right {
+    max-width: 50%;
+  }
+
+  &__btn {
+    margin-top: 20px;
+  }
+
+  &__nav {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding: 10px 0 0 0;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    outline: 1px solid var(--grey-light);
+    cursor: pointer;
+  }
+
+  &__icon {
+    height: 100px;
+  }
+}

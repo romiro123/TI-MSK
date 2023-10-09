@@ -28,4 +28,13 @@ const swiperCompanies = new Swiper('.swiper--companies', {
   loop: true,
 });
 
+const swiperLizing = new Swiper('.swiper--lizing', {
+  slidesPerView: 2,
+  // loop: true,
+  navigation: {
+    nextEl: '.btn--next',
+    prevEl: '.btn--prev',
+  },
+});
+
 
