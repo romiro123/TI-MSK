@@ -1,10 +1,6 @@
 let cardSection = document.getElementById('catalog');
 let card = document.querySelectorAll('.card');
 
-
-// console.log(cardSection)
-console.log(card)
-
 cardSection.onmouseenter = (e) => {
   console.log('вход')
   cardSection.addEventListener('mousemove', function (e) {
@@ -16,6 +12,7 @@ cardSection.onmouseenter = (e) => {
     // console.log(`${x - cardSection.offsetLeft}:${y - cardSection.offsetTop}`);
     card.forEach((item) => {
       item.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+      item.style.transition = '';
     })
   });
 
@@ -24,6 +21,7 @@ cardSection.onmouseleave = (event) => {
   // console.log('выход')
   card.forEach((item) => {
     item.style.transform = `rotateY(${0}deg) rotateX(${0}deg)`;
+    item.style.transition = 'transform .3s';
 
   })
 }

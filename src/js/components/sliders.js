@@ -1,6 +1,6 @@
 // Подключение свайпера
-import Swiper, { Navigation, Pagination, Autoplay, FreeMode } from 'swiper';
-Swiper.use([Navigation, Pagination, Autoplay, FreeMode]);
+import Swiper, { Navigation, Pagination, Autoplay, Grid, FreeMode } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay, Grid, FreeMode]);
 
 const swiperHero = new Swiper('.swiper--hero', {
   slidesPerView: 1,
@@ -30,11 +30,24 @@ const swiperCompanies = new Swiper('.swiper--companies', {
 
 const swiperLizing = new Swiper('.swiper--lizing', {
   slidesPerView: 2,
-  // loop: true,
+  loop: true,
   navigation: {
-    nextEl: '.btn--next',
-    prevEl: '.btn--prev',
+    nextEl: '.lizing__btn-next',
+    prevEl: '.lizing__btn-prev',
   },
 });
 
+const swiperProject = new Swiper('.swiper--project', {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  grid: {
+    rows: 2,
+    fill: 'row',
+  },
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '.project__btn-next',
+    prevEl: '.project__btn-prev',
+  },
+});
 
