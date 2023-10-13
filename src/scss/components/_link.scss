@@ -10,4 +10,18 @@
     font-size: 18px;
     padding: 15px 50px;
   }
+
+  &--grey {
+    color: var(--grey)
+  }
+
+  &--light {
+    color: var(--light-main);
+  }
+
+  &--accent {
+    background-color: var(--accent);
+    color: var(--light-main);
+    padding: 6px 14px;
+  }
 }

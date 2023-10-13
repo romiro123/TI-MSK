@@ -19,7 +19,14 @@
     color: var(--bg-main);
   }
 
-  &--subtitle {}
+  &--accent-sm {
+    color: var(--accent);
+    // font-family: Golos;
+    font-family: AdventPro;
+    // font-family: furore;
+    // font-weight: 600;
+    font-size: 18px;
+  }
 
 }
 

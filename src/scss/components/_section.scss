@@ -3,6 +3,11 @@
     background-color: var(--dark);
   }
 
+  &--light {
+    background-color: var(--light-main);
+    background-color: #f5f5f5;
+  }
+
   &:not(:last-child) {
     margin-bottom: 80px;
   }

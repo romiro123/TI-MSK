@@ -1,0 +1,17 @@
+.social {
+
+  display: flex;
+
+  &__link {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &__icon {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -75,3 +75,12 @@ const swiperNews = new Swiper('.swiper--news', {
 
 
 
+const swiperReviews = new Swiper('.swiper--reviews', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: '.reviews__btn-next',
+    prevEl: '.reviews__btn-prev',
+  },
+});

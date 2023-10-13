@@ -1,0 +1,38 @@
+.callback {
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: -1;
+    height: 70px;
+    width: 70px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-image: url(../img/svg/red-line.svg);
+    transform: rotate(15deg);
+  }
+
+  &__wrapp {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__content {}
+
+  &__form {
+    width: 400px;
+    flex-shrink: 0;
+  }
+}

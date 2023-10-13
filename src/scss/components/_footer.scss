@@ -1,0 +1,48 @@
+.footer {
+  &__container {
+    padding-top: var(--content-offset);
+    padding-bottom: var(--content-offset);
+  }
+
+  &__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 30px;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__contacts {
+    margin-bottom: 15px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__logo-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  &__social {
+    display: flex;
+
+    .social__item:not(:last-child) {
+      margin: 0 15px 0 0;
+    }
+  }
+
+
+
+  &__nav {}
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &__nav-link {}
+}
