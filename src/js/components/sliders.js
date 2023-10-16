@@ -23,9 +23,17 @@ const swiperHero = new Swiper('.swiper--hero', {
 });
 
 const swiperCompanies = new Swiper('.swiper--companies', {
-  slidesPerView: 3,
+  // slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 3,
+    }
+  }
 });
 
 const swiperLizing = new Swiper('.swiper--lizing', {
@@ -49,6 +57,25 @@ const swiperProject = new Swiper('.swiper--project', {
     nextEl: '.project__btn-next',
     prevEl: '.project__btn-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.2,
+      slidesPerGroup: 1,
+      spaceBetween: 15,
+    },
+    576: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    }
+  }
 });
 
 const swiperNews = new Swiper('.swiper--news', {
@@ -62,15 +89,7 @@ const swiperNews = new Swiper('.swiper--news', {
     stretch: 0,
     depth: 100,
     modifier: 2.5,
-  },
-  // pagination: {
-  //   el: '.swiper-pagination',
-  //   clickable: true,
-  // },
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // }
+  }
 });
 
 
@@ -83,4 +102,12 @@ const swiperReviews = new Swiper('.swiper--reviews', {
     nextEl: '.reviews__btn-next',
     prevEl: '.reviews__btn-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 3,
+    }
+  }
 });

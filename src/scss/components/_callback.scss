@@ -14,11 +14,29 @@
     background-repeat: no-repeat;
     background-image: url(../img/svg/red-line.svg);
     transform: rotate(15deg);
+
+    @include tablet {
+      bottom: 0px;
+      left: 0px;
+      background-size: 50px;
+    }
+
+    @include small-tablet {
+      bottom: -35px;
+    }
   }
 
   &__wrapp {
     display: flex;
     gap: 50px;
+
+    @include tablet {
+      gap: 25px;
+    }
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -34,5 +52,17 @@
   &__form {
     width: 400px;
     flex-shrink: 0;
+
+    @include tablet {
+      width: 300px;
+    }
+
+    @include small-tablet {
+      width: 400px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
   }
 }

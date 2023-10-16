@@ -24,6 +24,10 @@ html {
   line-height: 24px;
   // max-width: 1920px;
   margin: 0 auto;
+
+  @include mobile {
+    font-size: 14px;
+  }
 }
 
 img {

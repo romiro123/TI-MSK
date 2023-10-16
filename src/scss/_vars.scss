@@ -17,4 +17,13 @@
   --grey-light: #CACACA;
   --grey: #818287;
   --grey-dark: rgb(46 46 46 / 90%);
+
+
+  @include tablet {
+    --content-offset: 40px;
+  }
+
+  @include small-tablet {
+    --content-offset: 30px;
+  }
 }

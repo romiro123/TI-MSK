@@ -1,24 +1,62 @@
 <header class="header">
   <div class="header__container container">
+
+    <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger="">
+      <span class="burger__icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </span>
+    </button>
+
     <a href="#" class="header__logo">
       <svg class="header__logo-icon">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
     </a>
 
-    <nav class="nav">
+    <nav class="nav menu" data-menu>
       <div class="nav__burger" id="nav-burger">
         <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="#" class="nav__link link link--light">О компании</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Каталог</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Лизинг</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Наши проекты</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Отзывы</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Лизинг</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Наши проекты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
         </ul>
       </div>
     </nav>
 
-    <a class="link link--accent" href="tel:+79370424000">+7 (937) 042 40-00</a>
+    <ul class="social list-reset" title="">
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в telegram">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в whatsapp">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="mailto:stolica@truck-industry.ru" class="social__link" aria-label="Написать на почту">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="tel:88002225892" class="social__link" aria-label="Позвонить">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </header>

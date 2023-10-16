@@ -19,6 +19,10 @@
     &:hover {
       filter: brightness(1.5);
     }
+
+    &.swiper-slide-active {
+      filter: brightness(1.5);
+    }
   }
 
   &__card {

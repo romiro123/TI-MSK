@@ -17,6 +17,18 @@
     border: 1px solid var(--grey);
     background-color: rgba(17, 24, 28, 0.8);
 
+    @include tablet {
+      width: 41%;
+    }
+
+    @include small-tablet {
+      width: 62%;
+    }
+
+    @include mobile {
+      width: 84%;
+    }
+
     &__top {
       margin: 0;
     }
@@ -57,14 +69,20 @@
       position: relative;
       color: #118DA8;
       margin: 10px auto 0 0;
-      // padding: 10px 10px 10px 0;
 
       &::before {
         content: '';
         position: absolute;
-        width: 100%;
+        width: 0%;
+        height: 1px;
         bottom: -3px;
-        border-bottom: 1px solid #118DA8;
+        left: 0;
+        background-color: #118DA8;
+        transition: width 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        width: 100%;
       }
     }
   }

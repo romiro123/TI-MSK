@@ -4,15 +4,41 @@
   font-weight: 400;
   line-height: 30px;
 
+  @include small-tablet {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   &--hero {
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 4px;
+
+    @include tablet {
+      font-size: 36px;
+      line-height: 44px;
+    }
+
+    @include small-tablet {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
   }
 
   &--section {
     font-size: 36px;
     line-height: 44px;
+
+    @include tablet {
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    @include small-tablet {
+      font-size: 26px;
+      line-height: 30px;
+    }
   }
 
   &--dark {
@@ -21,20 +47,23 @@
 
   &--accent-sm {
     color: var(--accent);
-    // font-family: Golos;
     font-family: AdventPro;
-    // font-family: furore;
-    // font-weight: 600;
     font-size: 18px;
+
+    @include small-tablet {
+      font-size: 16px;
+    }
   }
 
 }
 
 .subtitle {
   font-family: AdventPro;
-  // font-weight: 600;
   font-size: 28px;
-  line-height: 28px;
+
+  @include tablet {
+    font-size: 24px;
+  }
 
   &--dark {
     color: var(--bg-main);

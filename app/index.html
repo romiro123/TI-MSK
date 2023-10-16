@@ -24,26 +24,64 @@
   <div class="site-container">
     <header class="header">
   <div class="header__container container">
+
+    <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger="">
+      <span class="burger__icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </span>
+    </button>
+
     <a href="#" class="header__logo">
       <svg class="header__logo-icon">
         <use xlink:href="img/sprite.svg#logo"></use>
       </svg>
     </a>
 
-    <nav class="nav">
+    <nav class="nav menu" data-menu>
       <div class="nav__burger" id="nav-burger">
         <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="#" class="nav__link link link--light">О компании</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Каталог</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Лизинг</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Наши проекты</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Отзывы</a></li>
-          <li class="nav__item"><a href="#" class="nav__link link link--light">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Лизинг</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Наши проекты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
         </ul>
       </div>
     </nav>
 
-    <a class="link link--accent" href="tel:+79370424000">+7 (937) 042 40-00</a>
+    <ul class="social list-reset" title="">
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в telegram">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в whatsapp">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#whatsapp"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="mailto:stolica@truck-industry.ru" class="social__link" aria-label="Написать на почту">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#mail"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="tel:88002225892" class="social__link" aria-label="Позвонить">
+          <svg class="social__icon">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
   </div>
 </header>
     <main class="main">
@@ -64,7 +102,7 @@
               надёжности</h2>
             <p class="hero__subtitle subtitle subtitle--dark">
               Откройте для себя непревзойдённую долговечность Saik-Iveco-Hongyan</p>
-            <a href="#" class="link link--big">Перейти</a>
+            <button class="btn btn--main btn-reset">Получить предложение</button>
           </div>
         </div>
       </div>
@@ -83,7 +121,7 @@
               </span>
               с помощью нашего овощевоза “Яровит”
             </p>
-            <a href="#" class="link link--big">Перейти</a>
+            <button class="btn btn--main btn-reset">Получить предложение</button>
           </div>
         </div>
       </div>
@@ -97,7 +135,7 @@
           <div class="hero__content ">
             <h2 class="hero__title title title--dark title--hero">Повысьте эффективность вашего хозяйства</h2>
             <p class="hero__subtitle subtitle subtitle--dark">Наши прицепы - надёжные партнёры на долгие годы</p>
-            <a href="#" class="link link--big">Перейти</a>
+            <button class="btn btn--main btn-reset">Получить предложение</button>
           </div>
         </div>
       </div>
@@ -111,204 +149,7 @@
     <div class="swiper-pagination swiper-pagination--bottom"></div>
   </div>
 </section>
-      <section class="section" id="about">
-  <div class="section__container container">
-    <div class="section__content about">
-      <h2 class="about__title title title--section">О компании</h2>
-      <p>
-        Благодаря профессиональным инженерам-конструкторам компании, мы способны создавать уникальные продукты, внедрять
-        оптимальные технические решения, отвечающие именно Вашим потребностям.
-        При покупке спецтехники, на Ваш выбор мы подберем и предоставим гибкие лизинговые программы, оптимальные сроки
-        производства и поставки техники. Помимо этого, вы получаете на выбор широкий ассортимент готовой техники и
-        наличие оригинальных запчастей от производителя. Мы предлагаем полный спектр услуг в приобретении техники, чтобы
-        обеспечить Вас всем необходимым для комфортного решения ваших задач.<br>
-        Добро пожаловать в мир надежности, качества и индивидуальных решений!
-      </p>
-      <div class="about__grid">
-
-        <picture>
-          <!-- <source srcset=".webp" type="image/webp"> -->
-          <img loading="lazy" src="img/about/about.webp" class="about__img img" alt="о компании">
-        </picture>
-
-        <ul class="about__adv adv adv__list list-reset ">
-          <li class="adv__item">
-            <h4 class="adv__title title">Лучшее из мира в одной машине</h4>
-            <p>Мы сочетаем передовые технологии и свои уникальные решения, делая нашу технику выбором номер один для
-              профессионалов.</p>
-          </li>
-          <li class="adv__item">
-            <h4 class="adv__title title">Ремонт без хлопот</h4>
-            <p>С нашими удобными болтовыми соединениями ремонт и замена деталей - это просто и быстро. Меньше тратите на
-              ремонт - больше работаете.</p>
-          </li>
-          <li class="adv__item">
-            <h4 class="adv__title title">Техника, на которую можно полагаться</h4>
-            <p>Благодаря тщательному выбору материалов, включая прочную сталь и топовую итальянскую гидравлику, мы
-              обеспечиваем долгий срок службы и надёжность нашего оборудования в каждой поездке.</p>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-      <section class="section" id="companies">
-  <div class="section__container container">
-    <div class="section__content companies">
-      <h2 class="companies__title title title--section">Группа компаний</h2>
-      <!-- Slider main container -->
-      <div class="swiper swiper--companies">
-
-        <div class="swiper-wrapper">
-          <div class="companies__slide swiper-slide">
-            <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#alfaplus"></use>
-            </svg>
-          </div>
-
-          <div class="companies__slide swiper-slide">
-            <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#kumir"></use>
-            </svg>
-          </div>
-
-          <div class="companies__slide swiper-slide">
-            <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#omegaplus"></use>
-            </svg>
-          </div>
-
-          <div class="companies__slide swiper-slide">
-            <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#rts"></use>
-            </svg>
-          </div>
-
-          <div class="companies__slide swiper-slide">
-            <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#specagromash"></use>
-            </svg>
-          </div>
-
-          <div class="companies__slide swiper-slide">
-            <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#techspec-main"></use>
-            </svg>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-      <section class="section section--black" id="catalog">
-  <div class="section__container container">
-    <div class="section__content catalog">
-      <h2 class="catalog__title title title--section">Каталог продукции</h2>
-
-      <ul class="list-reset catalog__list">
-        <li class="card">
-          <div class="card__inner">
-            <div class="card__front">
-              <img src="img/catalog/5.png" class="card__img" alt="">
-              <h3 class="card__title">Сельхозники</h3>
-            </div>
-            <div class="card__back">
-              <h3 class="card__title">Сельхозники</h3>
-              <p class="card__content">
-                Функциональность и прочность в каждом элементе. Прекрасный выбор для долгосрочных грузоперевозок и
-                сложных логистических задач.
-                Объем кузова от ... до ... кубов.
-              </p>
-              <button class="card__btn btn btn--main btn-reset">Перейти</button>
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card__inner">
-            <div class="card__front">
-              <img src="img/catalog/5.png" class="card__img" alt="">
-              <h3 class="card__title">Прицепы</h3>
-            </div>
-            <div class="card__back">
-              <h3 class="card__title">Прицепы</h3>
-              <p class="card__content">
-                Увеличьте свою грузоподъемность. Повышенная производительность и надежность для различных грузов.
-                Грузоподъемность от ... до ... кг.
-              </p>
-              <button class="card__btn  btn btn--main btn-reset">Перейти</button>
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card__inner">
-            <div class="card__front">
-              <img src="img/catalog/5.png" class="card__img" alt="">
-              <h3 class="card__title">Самосвалы с задней разгрузкой</h3>
-            </div>
-            <div class="card__back">
-              <h3 class="card__title">Самосвалы с задней разгрузкой</h3>
-              <p class="card__content">
-                Эффективная задняя разгрузка. Идеальный выбор для строительства и транспортировки крупногабаритных
-                материалов. Объем кузова от ... до ... кубов.
-              </p>
-              <button class="card__btn btn btn--main btn-reset">Перейти</button>
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card__inner">
-            <div class="card__front">
-              <img src="img/catalog/5.png" class="card__img" alt="">
-              <h3 class="card__title">Зерновозы</h3>
-            </div>
-            <div class="card__back">
-              <h3 class="card__title">Зерновозы</h3>
-              <p class="card__content">
-                Специализированный кузов для зерновых культур. Отличное решение для перевозки урожая с минимальными
-                потерями. Объем кузова от ... до ... кубов.
-              </p>
-              <button class="card__btn  btn btn--main btn-reset">Перейти</button>
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card__inner">
-            <div class="card__front">
-              <img src="img/catalog/5.png" class="card__img" alt="">
-              <h3 class="card__title">Полуприцепы</h3>
-            </div>
-            <div class="card__back">
-              <h3 class="card__title">Полуприцепы</h3>
-              <p class="card__content">
-                Функциональность и прочность в каждом элементе. Прекрасный выбор для долгосрочных грузоперевозок и
-                сложных логистических задач. Объем кузова от ... до ... кубов.
-              </p>
-              <button class="card__btn  btn btn--main btn-reset">Перейти</button>
-            </div>
-          </div>
-        </li>
-        <li class="card">
-          <div class="card__inner">
-            <div class="card__front">
-              <img src="img/catalog/5.png" class="card__img" alt="">
-              <h3 class="card__title">Овощевозы</h3>
-            </div>
-            <div class="card__back">
-              <h3 class="card__title">Овощевозы</h3>
-              <p class="card__content">
-                Быстрая и бережная горизонтальная разгрузка. Гарантирует сохранность овощей и уменьшает потери урожая до
-                25%. Объем кузова от ... до ... кубов.
-              </p>
-              <button class="card__btn btn btn--main btn-reset">Перейти</button>
-            </div>
-          </div>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</section>
+      
       <section class="section" id="lizing">
   <div class="section__container container">
     <div class="section__content lizing">
@@ -324,6 +165,7 @@
           <button class="lizing__btn btn btn--main btn-reset">Получить консультацию</button>
         </div>
         <div class="lizing__right">
+          <h3 class="lizing__bottom-subtitle title">Лизинговые партнеры</h3>
           <div class="lizing__swiper swiper swiper--lizing">
 
             <div class="swiper-wrapper">
@@ -359,7 +201,7 @@
             </div>
           </div>
 
-          <div class="nav-btn">
+          <div class="lizing__nav nav-btn">
             <button class="lizing__btn-prev btn nav-btn--prev btn-reset">
               <svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
                 <path d="M9.625 7.5625L13.0625 11L9.625 14.4375" stroke-linejoin="round"></path>
@@ -459,6 +301,96 @@
 
 
 
+    </div>
+  </div>
+</section>
+      <section class="section" id="about">
+  <div class="section__container container">
+    <div class="section__content about">
+      <h2 class="about__title title title--section">О компании</h2>
+      <p>
+        Благодаря профессиональным инженерам-конструкторам компании, мы способны создавать уникальные продукты, внедрять
+        оптимальные технические решения, отвечающие именно Вашим потребностям.
+        При покупке спецтехники, на Ваш выбор мы подберем и предоставим гибкие лизинговые программы, оптимальные сроки
+        производства и поставки техники. Помимо этого, вы получаете на выбор широкий ассортимент готовой техники и
+        наличие оригинальных запчастей от производителя. Мы предлагаем полный спектр услуг в приобретении техники, чтобы
+        обеспечить Вас всем необходимым для комфортного решения ваших задач.<br>
+        Добро пожаловать в мир надежности, качества и индивидуальных решений!
+      </p>
+      <div class="about__grid">
+
+        <picture class="about__picture">
+          <!-- <source srcset=".webp" type="image/webp"> -->
+          <img loading="lazy" src="img/about/about.webp" class="about__img img" alt="о компании">
+        </picture>
+
+        <ul class="about__adv adv adv__list list-reset ">
+          <li class="adv__item">
+            <h4 class="adv__title title">Лучшее из мира в одной машине</h4>
+            <p>Мы сочетаем передовые технологии и свои уникальные решения, делая нашу технику выбором номер один для
+              профессионалов.</p>
+          </li>
+          <li class="adv__item">
+            <h4 class="adv__title title">Ремонт без хлопот</h4>
+            <p>С нашими удобными болтовыми соединениями ремонт и замена деталей - это просто и быстро. Меньше тратите на
+              ремонт - больше работаете.</p>
+          </li>
+          <li class="adv__item">
+            <h4 class="adv__title title">Техника, на которую можно полагаться</h4>
+            <p>Благодаря тщательному выбору материалов, включая прочную сталь и топовую итальянскую гидравлику, мы
+              обеспечиваем долгий срок службы и надёжность нашего оборудования в каждой поездке.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section" id="companies">
+  <div class="section__container container">
+    <div class="section__content companies">
+      <h2 class="companies__title title title--section">Группа компаний</h2>
+      <!-- Slider main container -->
+      <div class="swiper swiper--companies">
+
+        <div class="swiper-wrapper">
+          <div class="companies__slide swiper-slide">
+            <svg class="companies__icon">
+              <use xlink:href="img/sprite.svg#alfaplus"></use>
+            </svg>
+          </div>
+
+          <div class="companies__slide swiper-slide">
+            <svg class="companies__icon">
+              <use xlink:href="img/sprite.svg#kumir"></use>
+            </svg>
+          </div>
+
+          <div class="companies__slide swiper-slide">
+            <svg class="companies__icon">
+              <use xlink:href="img/sprite.svg#omegaplus"></use>
+            </svg>
+          </div>
+
+          <div class="companies__slide swiper-slide">
+            <svg class="companies__icon">
+              <use xlink:href="img/sprite.svg#rts"></use>
+            </svg>
+          </div>
+
+          <div class="companies__slide swiper-slide">
+            <svg class="companies__icon">
+              <use xlink:href="img/sprite.svg#specagromash"></use>
+            </svg>
+          </div>
+
+          <div class="companies__slide swiper-slide">
+            <svg class="companies__icon">
+              <use xlink:href="img/sprite.svg#techspec-main"></use>
+            </svg>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
@@ -927,17 +859,19 @@
 
       <div class="contacts__item">
         <h3 class="contacts__title title">Адрес</h3>
-        <address class="contacts__description">Москва, ул. Электродная, д.2, стр 12, пом. 6Н</address>
+        <address class="contacts__description" aria-label="Наш адрес">Москва, ул. Электродная, д.2, стр 12, пом. 6Н
+        </address>
       </div>
 
       <div class="contacts__item">
         <h3 class="contacts__title title">Телефон</h3>
-        <a class="contacts__link link link--grey" href="tel:+79370424000">+7 (937) 042 40-00</a>
+        <a class="contacts__link link link--grey" href="tel:88002225892" aria-label="Наш телефон">8 (800) 222-58-92</a>
       </div>
 
       <div class="contacts__item">
         <h3 class="contacts__title title">Почта</h3>
-        <a class="contacts__link link link--grey" href="mailto:stolica@truck-industry.ru">stolica@truck-industry.ru
+        <a class="contacts__link link link--grey" href="mailto:stolica@truck-industry.ru"
+          aria-label="Наша почта">stolica@truck-industry.ru
         </a>
       </div>
 
@@ -959,14 +893,14 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#" target="_blank" class="social__link" aria-label="связаться почта">
+            <a href="mailto:stolica@truck-industry.ru" class="social__link" aria-label="Наша почта">
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" target="_blank" class="social__link" aria-label="связаться телефон">
+            <a class="social__link" href="tel:88002225892" aria-label="Наш телефон">
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
@@ -995,10 +929,11 @@
         </a>
         <ul class="footer__contacts list-reset">
           <li class="footer__contacts-item">
-            <a class="link link--grey" href="tel:+79370424000">+7 (937) 042 40-00</a>
+            <a class="link link--grey" href="tel:88002225892" aria-label="Наш телефон">8 (800) 222-58-92</a>
           </li>
           <li class="footer__contacts-item">
-            <a class="link link--grey" href="mailto:stolica@truck-industry.ru">stolica@truck-industry.ru
+            <a class="link link--grey" href="mailto:stolica@truck-industry.ru"
+              aria-label="Наша почта">stolica@truck-industry.ru
             </a>
           </li>
         </ul>
@@ -1019,14 +954,14 @@
             </a>
           </li>
           <li class="social__item">
-            <a href="#" target="_blank" class="social__link" aria-label="связаться почта">
+            <a href="mailto:stolica@truck-industry.ru" class="social__link" aria-label="Наша почта">
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#mail"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="#" target="_blank" class="social__link" aria-label="связаться телефон">
+            <a href="tel:88002225892" class="social__link" aria-label="Наш телефон">
               <svg class="social__icon">
                 <use xlink:href="img/sprite.svg#phone"></use>
               </svg>
@@ -1035,9 +970,9 @@
         </ul>
 
       </div>
-      <div class="">
+      <div class="footer__nav ">
         <h3 class="footer__title title">Разделы</h3>
-        <ul class="footer__nav list-reset">
+        <ul class="footer__nav-list list-reset">
           <li class="footer__nav-item">
             <a href="#" class="footer__nav-link link link--grey" aria-label="">Каталог</a>
           </li>
@@ -1056,9 +991,9 @@
         </ul>
       </div>
 
-      <div class="">
+      <div class="footer__form">
         <h3 class="footer__title title">Оставить заявку</h3>
-        <form action="#" class="footer__form form">
+        <form action="#" class=" form">
           <label class="form__label">
             <input type="text" name="name" class="input input--light input-name input-reset" placeholder="Имя*">
           </label>

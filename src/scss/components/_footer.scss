@@ -8,6 +8,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     gap: 30px;
+
+    @include tablet {
+      gap: 14px;
+    }
+
+    @include small-tablet {
+      grid-template-columns: auto 1fr;
+      gap: 30px;
+    }
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
   }
 
   &__title {
@@ -36,13 +50,16 @@
     }
   }
 
-
-
-  &__nav {}
+  &__nav {
+    @include small-tablet {
+      display: none;
+    }
+  }
 
   &__nav-item:not(:last-child) {
     margin-bottom: 10px;
   }
 
   &__nav-link {}
+
 }

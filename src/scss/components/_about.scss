@@ -8,6 +8,21 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     margin-top: 60px;
+
+    @include tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mobile {
+      gap: 15px;
+      margin-top: 40px;
+    }
+  }
+
+  &__picture {
+    @include tablet {
+      grid-column: 1 / span 2;
+    }
   }
 
   &__img {
@@ -17,5 +32,11 @@
 
   &__adv {
     grid-column: 2 span /4;
+
+    @include tablet {
+      grid-column: 1 / span 2;
+      grid-row: 2;
+    }
   }
+
 }

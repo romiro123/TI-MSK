@@ -69,14 +69,21 @@
       flex-shrink: 0;
       width: 35px;
       height: 35px;
-      border: 2px solid var(--light);
+      border: 2px solid var(--grey-light);
       border-radius: 100%;
       fill: none;
       background-color: transparent;
-      stroke: var(--light);
+      stroke: var(--grey-light);
       stroke-linecap: round;
       stroke-width: 2px;
       transition: stroke 0.2s ease-in-out, border 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+
+    &:hover {
+      svg {
+        border-color: var(--light);
+        stroke: var(--light);
+      }
     }
   }
 
