@@ -4,7 +4,7 @@
   // base
   --font-family: "Golos", sans-serif;
   --content-width: 1290px;
-  --content-offset: 60px;
+  // --content-offset: 60px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
@@ -19,11 +19,5 @@
   --grey-dark: rgb(46 46 46 / 90%);
 
 
-  @include tablet {
-    --content-offset: 40px;
-  }
 
-  @include small-tablet {
-    --content-offset: 30px;
-  }
 }

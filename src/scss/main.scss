@@ -1,9 +1,11 @@
 // базовые подключения
-@import "mixins";
 @import "vars";
+@import "mixins";
 @import "fonts";
 @import "settings";
 
+@import "./components/burger";
+@import "./components/modal";
 @import "./components/section";
 @import "./components/title";
 @import "./components/swiper";
@@ -13,9 +15,7 @@
 @import "./components/form";
 @import "./components/social";
 @import "./components/map";
-@import "./components/burger";
 @import "./components/nav";
-@import "./components/modal";
 
 // @import "./components/icon";
 

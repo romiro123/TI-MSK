@@ -27,15 +27,15 @@ const t=(t,e=1e4)=>(t=parseFloat(t+"")||0,Math.round((t+Number.EPSILON)*e)/e),e=
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/sliders */ "./src/js/components/sliders.js");
-/* harmony import */ var _components_gallery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/gallery */ "./src/js/components/gallery.js");
-/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
-/* harmony import */ var _components_validation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/validation */ "./src/js/components/validation.js");
-/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/map */ "./src/js/components/map.js");
-/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_components_map__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _components_header_scroll__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/header-scroll */ "./src/js/components/header-scroll.js");
-/* harmony import */ var _components_header_scroll__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_header_scroll__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _components_SmoothScroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/SmoothScroll */ "./src/js/components/SmoothScroll.js");
+/* harmony import */ var _components_SmoothScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/SmoothScroll */ "./src/js/components/SmoothScroll.js");
+/* harmony import */ var _components_sliders__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/sliders */ "./src/js/components/sliders.js");
+/* harmony import */ var _components_gallery__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/gallery */ "./src/js/components/gallery.js");
+/* harmony import */ var _components_modal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/modal */ "./src/js/components/modal.js");
+/* harmony import */ var _components_validation__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/validation */ "./src/js/components/validation.js");
+/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/map */ "./src/js/components/map.js");
+/* harmony import */ var _components_map__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_components_map__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_header_scroll__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/header-scroll */ "./src/js/components/header-scroll.js");
+/* harmony import */ var _components_header_scroll__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_components_header_scroll__WEBPACK_IMPORTED_MODULE_6__);
 console.log('components');
 
 

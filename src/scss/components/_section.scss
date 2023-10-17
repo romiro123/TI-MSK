@@ -15,6 +15,14 @@
   &__content {
     border-radius: 35px;
     background-color: #000000;
-    padding: var(--content-offset);
+    padding: 60px;
+
+    @include tablet {
+      padding: 40px;
+    }
+
+    @include small-tablet {
+      padding: 30px;
+    }
   }
 }
