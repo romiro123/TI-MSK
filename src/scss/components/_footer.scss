@@ -1,7 +1,14 @@
 .footer {
   &__container {
-    padding-top: var(--content-offset);
-    padding-bottom: var(--content-offset);
+    padding: 60px;
+
+    @include tablet {
+      padding: 40px;
+    }
+
+    @include small-tablet {
+      padding: 30px;
+    }
   }
 
   &__top {

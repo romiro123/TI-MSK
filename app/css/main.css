@@ -1674,8 +1674,17 @@ p {
 }
 
 .footer__container {
-  padding-top: var(--content-offset);
-  padding-bottom: var(--content-offset);
+  padding: 60px;
+}
+@media (max-width: 1024px) {
+  .footer__container {
+    padding: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__container {
+    padding: 30px;
+  }
 }
 .footer__top {
   display: -ms-grid;
