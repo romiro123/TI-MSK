@@ -51,11 +51,47 @@ const rulesModal = [
   },
 ];
 
-
+const rulesModalShort = [
+  {
+    ruleSelector: '.input-name',
+    rules: [
+      {
+        rule: 'minLength',
+        value: 3,
+        errorMessage: 'Заполните имя',
+      },
+      {
+        rule: 'maxLength',
+        value: 15,
+        errorMessage: 'Заполните имя',
+      },
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните имя',
+      }
+    ]
+  },
+  {
+    ruleSelector: '.input-tel',
+    tel: true,
+    telError: 'Введите корректный телефон',
+    rules: [
+      {
+        rule: 'required',
+        value: true,
+        errorMessage: 'Заполните телефон'
+      }
+    ]
+  }
+];
 
 const afterForm = () => {
 };
 
-validateForms('.callback__form', rulesModal, afterForm);
+validateForms('.form--callback', rulesModal, afterForm);
+validateForms('.form--modal', rulesModal, afterForm);
+validateForms('.form--footer', rulesModalShort, afterForm);
+
 
 

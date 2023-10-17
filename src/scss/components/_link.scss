@@ -12,7 +12,29 @@
   }
 
   &--grey {
-    color: var(--grey)
+    color: var(--grey);
+    position: relative;
+    transition: color .2s ease-in-out;
+    padding: 3px 5px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 0%;
+      height: 1px;
+      left: 0;
+      bottom: -3px;
+      background-color: var(--accent);
+      transition: width .2s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--light);
+
+      &::after {
+        width: 100%;
+      }
+    }
   }
 
   &--light {
@@ -20,8 +42,6 @@
   }
 
   &--accent {
-    background-color: var(--accent);
-    color: var(--light-main);
-    padding: 6px 14px;
+    color: var(--accent);
   }
 }

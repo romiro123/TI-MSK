@@ -25,7 +25,7 @@
     <header class="header">
   <div class="header__container container">
 
-    <button class="burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger="">
+    <button class="header__burger burger btn-reset" aria-label="Открыть меню" aria-expanded="false" data-burger="">
       <span class="burger__icon">
         <span class="line"></span>
         <span class="line"></span>
@@ -39,20 +39,20 @@
       </svg>
     </a>
 
-    <nav class="nav menu" data-menu>
+    <nav class="header__nav nav menu" data-menu>
       <div class="nav__burger" id="nav-burger">
         <ul class="nav__list list-reset">
-          <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Лизинг</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Наши проекты</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
-          <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link" data-scroll>О компании</a></li>
+          <li class="nav__item"><a href="#catalog" class="nav__link" data-scroll>Каталог</a></li>
+          <li class="nav__item"><a href="#lizing" class="nav__link" data-scroll>Лизинг</a></li>
+          <li class="nav__item"><a href="#project" class="nav__link" data-scroll>Наши проекты</a></li>
+          <li class="nav__item"><a href="#reviews" class="nav__link" data-scroll>Отзывы</a></li>
+          <li class="nav__item"><a href="#contacts" class="nav__link" data-scroll>Контакты</a></li>
         </ul>
       </div>
     </nav>
 
-    <ul class="social list-reset" title="">
+    <ul class="header__social social list-reset" title="">
       <li class="social__item">
         <a href="#" target="_blank" class="social__link" aria-label="Наша страничка в telegram">
           <svg class="social__icon">
@@ -94,15 +94,15 @@
       <div class="swiper-slide">
         <picture>
           <!-- <source srcset=".webp" type="image/webp"> -->
-          <img loading="lazy" src="img/hero/slide-1.webp" class="hero__img img" height="700" alt="слайд 1">
+          <img loading="lazy" src="img/hero/slide-1.webp" class="hero__img img" height="700" alt="Saic-Iveco-Hongyan">
         </picture>
         <div class="hero__container container">
           <div class="hero__content ">
-            <h2 class="hero__title title title--dark title--hero">Saic-Iveco-Hongyan Создан для
+            <h2 class="hero__title title title--dark title--hero">Saic Iveco Hongyan Создан для
               надёжности</h2>
             <p class="hero__subtitle subtitle subtitle--dark">
-              Откройте для себя непревзойдённую долговечность Saik-Iveco-Hongyan</p>
-            <button class="btn btn--main btn-reset">Получить предложение</button>
+              Откройте для себя непревзойдённую долговечность Saik Iveco Hongyan</p>
+            <button class="btn btn--main btn-reset" data-graph-path="form">Получить предложение</button>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@
       <div class="swiper-slide">
         <picture>
           <!-- <source srcset=".webp" type="image/webp"> -->
-          <img loading="lazy" src="img/hero/slide-2.webp" class="hero__img img" height="700" alt="слайд 1">
+          <img loading="lazy" src="img/hero/slide-2.webp" class="hero__img img" height="700" alt="овощевоз “Яровит”">
         </picture>
         <div class="hero__container container">
           <div class="hero__content ">
@@ -121,7 +121,7 @@
               </span>
               с помощью нашего овощевоза “Яровит”
             </p>
-            <button class="btn btn--main btn-reset">Получить предложение</button>
+            <button class="btn btn--main btn-reset" data-graph-path="form">Получить предложение</button>
           </div>
         </div>
       </div>
@@ -129,23 +129,23 @@
       <div class="swiper-slide">
         <picture>
           <!-- <source srcset=".webp" type="image/webp"> -->
-          <img loading="lazy" src="img/hero/slide-3.webp" class="hero__img img" height="700" alt="слайд 1">
+          <img loading="lazy" src="img/hero/slide-3.webp" class="hero__img img" height="700" alt="Прицепы">
         </picture>
         <div class="hero__container container">
           <div class="hero__content ">
             <h2 class="hero__title title title--dark title--hero">Повысьте эффективность вашего хозяйства</h2>
             <p class="hero__subtitle subtitle subtitle--dark">Наши прицепы - надёжные партнёры на долгие годы</p>
-            <button class="btn btn--main btn-reset">Получить предложение</button>
+            <button class="btn btn--main btn-reset" data-graph-path="form">Получить предложение</button>
           </div>
         </div>
       </div>
 
     </div>
-    <!-- If we need navigation buttons -->
+
     <div class="swiper-button-prev swiper-button-prev--red"></div>
     <div class="swiper-button-next swiper-button-next--red"></div>
 
-    <!-- If we need scrollbar -->
+
     <div class="swiper-pagination swiper-pagination--bottom"></div>
   </div>
 </section>
@@ -162,7 +162,7 @@
             компаниям. Гибкие платёжные планы, минимальный пакет документов, прозрачные условия - мы заботимся о вашем
             комфорте на каждом этапе сделки.
           </p>
-          <button class="lizing__btn btn btn--main btn-reset">Получить консультацию</button>
+          <button class="lizing__btn btn btn--main btn-reset" data-graph-path="form">Получить консультацию</button>
         </div>
         <div class="lizing__right">
           <h3 class="lizing__bottom-subtitle title">Лизинговые партнеры</h3>
@@ -511,201 +511,6 @@
 
     </div>
 </section>
-
-<div class="graph-modal">
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news1">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Российский производитель специализированной техники, TRUCK Industry, рад представить вашему вниманию
-        нашу новую разработку – автокомплекс для транспортировки живой рыбы – «Живорыбка». Этот проект
-        является нашим откликом на потребности рынка и подтверждением того, что российская спецтехника может
-        удивить своими инновациями.
-      </p>
-
-      <p class="graph-modal__text">
-        Почему «Живорыбка» станет незаменимым помощником для вашего бизнеса?
-      </p>
-      <p class="graph-modal__text">
-        Передовые технологии: Каждый элемент комплекса разработан так, чтобы создать идеальные условия для
-        жизнедеятельности.
-      </p>
-      <ul class="graph-modal__text list-reset">
-        <li>Аэратор с распылителем обеспечивает оптимальный уровень кислорода, а система регулировки
-          температуры позволяет поддерживать живых обитателей в комфортных условиях.</li>
-        <li>Генератор кислорода поспособствует стабильному содержанию О² в среде обитания.</li>
-        <li>Система циркуляции и очистки воды, добавит ей свежести.</li>
-        <li>Климатическая установка обеспечит необходимую температуру воздуха как внутри модуля, так и самой
-          воды.</li>
-        <li>А дизельный генератор в тандеме с собственным топливным баком, сделает комплекс автономной и
-          самостоятельной транспортной единицей, способной длительное время находится в режиме
-          самообеспечения.</li>
-        <li>И добьем мы все это дело, возможностью подключения комплекса к электросети на 220V и 380V.</li>
-      </ul>
-
-      <p class="graph-modal__text">
-        Безопасность и комфорт: «Живорыбка» – это не просто транспортное средство, это настоящий дом для
-        рыбы. Оснащенный современными системами поддержания микроклимата, он гарантирует сохранность
-        вашего ценного груза на весь период перевозки. Качество и надежность: Построенный на базе проверенных
-        решений и современного подхода, этот Автокомплекс объединяет в себе все лучшие качества российской
-        спецтехники.
-      </p>
-      <p class="graph-modal__text">
-        С «Живорыбкой» вы не только оптимизируете процесс транспортировки живой рыбы, но и получите
-        возможность уверенно развивать свой бизнес, зная, что рядом есть надежный партнер – TRUCK Industry.
-      </p>
-    </div>
-
-
-  </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news2">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-
-    <div class="graph-modal__content">
-      <p class="graph-modal__text">
-        Захватывающие новости: наша команда выходит на скоростную
-        трассу! Truck Industry, одни из лидеров в области спецтехники, рады
-        объявить о новом захватывающем проекте, который выведет нас на
-        передовые позиции в мире гонок. Мы официально запускаем
-        собственную гоночную команду по дрифту — TI Racing!
-        Этот смелый шаг знаменует собой важную веху в истории нашей
-        компании, поскольку мы расширяем наши горизонты за пределы
-        спецтехники. Обладая страстью к скорости, инновациям и конкуренции,
-        мы стремимся принять участие в гоночных мероприятиях и чемпионатах.
-      </p>
-      <p class="graph-modal__text">
-        Почему гонки? В Truck Industry мы всегда стремились к совершенству и
-        раздвигали границы возможного. Гонки представляют собой
-        окончательное испытание навыков, точности и командной работы. Это
-        место, где передовые технологии встречаются с необузданным
-        талантом, и где стремление к победе объединяет нас всех.
-        Присоединяйтесь к нам в путешествии Мы приглашаем всех наших
-        постоянных клиентов, партнеров и сторонников присоединиться к нам в
-        этом захватывающем путешествии.
-      </p>
-      <p class="graph-modal__text">
-        Следите за обновлениями, закулисным контентом и возможностями
-        взаимодействия с нашей гоночной командой. Мы очень рады этой новой
-        главе в истории нашей компании. Будьте готовы стать свидетелями того,
-        как мы расширяем границы возможностей, бьем рекорды и творим
-        историю в мире гонок. Вместе мы быстро идем к успеху! Давайте усилим
-        азарт и творим историю вместе!
-      </p>
-    </div>
-
-
-  </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news3">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-
-    <div class="graph-modal__content">
-
-      <p class="graph-modal__text">
-        Представляем новую модель картофелевоза ЯРОВИТ: Снижение ущерба урожаю и увеличение прибыли
-        Мы рады сообщить о выпуске нашей новинки - картофелевоза "ЯРОВИТ". Это революционное
-        пополнение нашего автопарка призвано изменить подход к транспортировке ценных культур, значительно
-        сократив их повреждение и, как следствие, увеличив прибыль вашего бизнеса.
-      </p>
-      <p class="graph-modal__text">
-        Одной из отличительных особенностей Яровита является его удивительная способность снижать ущерб
-        урожаю на 25%. Мы понимаем, что каждый урожай очень ценен, и минимизация ущерба при
-        транспортировке очень важна как для фермеров, так и для дистрибьюторов. С новой моделью
-        картофелевоза вы можете быть уверены, что ваша продукция доедет до места назначения в
-        первозданном виде.
-      </p>
-      <p class="graph-modal__text">
-        Невозможно переоценить прямую зависимость между снижением ущерба урожаю и увеличением
-        прибыли. Меньший ущерб означает более высокое качество продукции, что, в свою очередь, ведет к
-        повышению рыночных цен и удовлетворенности клиентов. Инвестиции в ЯРОВИТ - это не просто покупка
-        транспортного средства, это стратегический шаг, направленный на повышение финансового успеха
-        вашего бизнеса.
-      </p>
-      <p class="graph-modal__text">
-        Выбор новой модели овощевоза YAROVIT - это вклад в будущее вашего сельскохозяйственного бизнеса.
-        Сокращая потери урожая и повышая качество продукции, вы не только улучшаете свою репутацию, но и
-        повышаете свою рентабельность.
-      </p>
-      <p class="graph-modal__text">
-        Не упустите возможность поднять перевозки урожая на новый уровень и увеличить прибыль вашего
-        бизнеса. Присоединяйтесь к нам, чтобы отметить будущее транспортировки сельскохозяйственных
-        культур с помощью новой модели картофелевоза ЯРОВИТ от Truck Industry.
-      </p>
-    </div>
-
-
-  </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news4">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-
-    <div class="graph-modal__content">
-
-      <p class="graph-modal__text">
-        Главная цель Truck Industry — инновации. Идеология компании
-        подразумевает постоянный поиск новых решений. «Творческие»
-        конкуренты, в массе своей, не охотно берутся за их внедрение.
-        Было не просто найти единомышленников, готовых к творческим
-        экспериментам в сфере производства спецтехники. Ведущий дилер
-        Минского автомобильного завода, ГлавМазТорг, стал идейным
-        партнером Truck Industry, вдохновившись нашими идеями и амбициями.
-        Объединившись, мы вместе по-новому взглянули на индустрию
-        спецтехники.
-      </p>
-      <p class="graph-modal__text">
-
-        Задавать тренды – вот что стало нашей главной совместной миссией.
-        Делать технику для сельского хозяйства и других отраслей максимально
-        удобной, доступной и многофункциональной, заботясь о потребителях и
-        их благосостоянии. Мы постараемся показать, что такое «прибыльная и
-        удобная спецтехника», а также вытеснить морально и технически
-        устаревшую. ГлавМазТорг стал нашим верным партнером во внедрении
-        новых идей и технологий.
-      </p>
-      <p class="graph-modal__text">
-        Начинается новая глава в истории компании! Скоро для вас будет
-        множество интересных и важных новостей.
-      </p>
-    </div>
-
-
-  </div>
-  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news5">
-    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
-
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque quam autem provident consectetur
-        aspernatur assumenda nam facere mollitia repellendus labore ipsam eum, exercitationem nihil, dolore suscipit?
-        Ad, eius delectus.
-      </p>
-      <p class="graph-modal__text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque quam autem provident consectetur
-        aspernatur assumenda nam facere mollitia repellendus labore ipsam eum, exercitationem nihil, dolore suscipit?
-        Ad, eius delectus.
-      </p>
-      <p class="graph-modal__text">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque quam autem provident consectetur
-        aspernatur assumenda nam facere mollitia repellendus labore ipsam eum, exercitationem nihil, dolore suscipit?
-        Ad, eius delectus.
-      </p>
-    </div>
-
-
-  </div>
-
-</div>
       <section class="section section--black" id="callback">
   <div class="section__container container">
     <div class="section__content callback">
@@ -713,7 +518,8 @@
       <div class="callback__wrapp">
 
         <div class="callback__content">
-          <h3 class="callback__subtitle title title--section">Ищете надежное решение для грузоперевозок? Мы готовы
+          <h3 class="callback__subtitle title title--section">Ищете надежное решение для грузовых перевозок?<br> Мы
+            готовы
             помочь!
           </h3>
           <p>
@@ -723,7 +529,7 @@
 
         </div>
 
-        <form action="#" class="callback__form form">
+        <form action="#" class="callback__form form form--callback">
           <label class="form__label">
             <input type="text" name="name" class="input input-name input-reset" placeholder="Имя">
           </label>
@@ -865,12 +671,13 @@
 
       <div class="contacts__item">
         <h3 class="contacts__title title">Телефон</h3>
-        <a class="contacts__link link link--grey" href="tel:88002225892" aria-label="Наш телефон">8 (800) 222-58-92</a>
+        <a class="contacts__link link link--accent" href="tel:88002225892" aria-label="Наш телефон">8 (800)
+          222-58-92</a>
       </div>
 
       <div class="contacts__item">
         <h3 class="contacts__title title">Почта</h3>
-        <a class="contacts__link link link--grey" href="mailto:stolica@truck-industry.ru"
+        <a class="contacts__link link link--accent" href="mailto:stolica@truck-industry.ru"
           aria-label="Наша почта">stolica@truck-industry.ru
         </a>
       </div>
@@ -974,26 +781,27 @@
         <h3 class="footer__title title">Разделы</h3>
         <ul class="footer__nav-list list-reset">
           <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link link link--grey" aria-label="">Каталог</a>
+            <a href="#catalog" class="footer__nav-link link link--grey" data-scroll aria-label="Каталог">Каталог</a>
           </li>
           <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link link link--grey" aria-label="">О компании</a>
+            <a href="#about" class="footer__nav-link link link--grey" data-scroll aria-label="компании">О компании</a>
           </li>
           <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link link link--grey" aria-label="">Лизинг</a>
+            <a href="#lizing" class="footer__nav-link link link--grey" data-scroll aria-label="Лизинг">Лизинг</a>
           </li>
           <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link link link--grey" aria-label="">Наши проекты</a>
+            <a href="#project" class="footer__nav-link link link--grey" data-scroll aria-label="Наши проекты">Наши
+              проекты</a>
           </li>
           <li class="footer__nav-item">
-            <a href="#" class="footer__nav-link link link--grey" aria-label="">Отзывы</a>
+            <a href="#reviews" class="footer__nav-link link link--grey" data-scroll aria-label="Отзывы">Отзывы</a>
           </li>
         </ul>
       </div>
 
       <div class="footer__form">
         <h3 class="footer__title title">Оставить заявку</h3>
-        <form action="#" class=" form">
+        <form action="#" class="form form--footer">
           <label class="form__label">
             <input type="text" name="name" class="input input--light input-name input-reset" placeholder="Имя*">
           </label>
@@ -1012,7 +820,221 @@
     </div> -->
   </div>
 </footer>
-    
+    <div class="graph-modal">
+  <!-- Новости в модальном окне -->
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Российский производитель специализированной техники, TRUCK Industry, рад представить вашему вниманию
+        нашу новую разработку – автокомплекс для транспортировки живой рыбы – «Живорыбка». Этот проект
+        является нашим откликом на потребности рынка и подтверждением того, что российская спецтехника может
+        удивить своими инновациями.
+      </p>
+
+      <p class="graph-modal__text">
+        Почему «Живорыбка» станет незаменимым помощником для вашего бизнеса?
+      </p>
+      <p class="graph-modal__text">
+        Передовые технологии: Каждый элемент комплекса разработан так, чтобы создать идеальные условия для
+        жизнедеятельности.
+      </p>
+      <ul class="graph-modal__text list-reset">
+        <li>Аэратор с распылителем обеспечивает оптимальный уровень кислорода, а система регулировки
+          температуры позволяет поддерживать живых обитателей в комфортных условиях.</li>
+        <li>Генератор кислорода поспособствует стабильному содержанию О² в среде обитания.</li>
+        <li>Система циркуляции и очистки воды, добавит ей свежести.</li>
+        <li>Климатическая установка обеспечит необходимую температуру воздуха как внутри модуля, так и самой
+          воды.</li>
+        <li>А дизельный генератор в тандеме с собственным топливным баком, сделает комплекс автономной и
+          самостоятельной транспортной единицей, способной длительное время находится в режиме
+          самообеспечения.</li>
+        <li>И добьем мы все это дело, возможностью подключения комплекса к электросети на 220V и 380V.</li>
+      </ul>
+
+      <p class="graph-modal__text">
+        Безопасность и комфорт: «Живорыбка» – это не просто транспортное средство, это настоящий дом для
+        рыбы. Оснащенный современными системами поддержания микроклимата, он гарантирует сохранность
+        вашего ценного груза на весь период перевозки. Качество и надежность: Построенный на базе проверенных
+        решений и современного подхода, этот Автокомплекс объединяет в себе все лучшие качества российской
+        спецтехники.
+      </p>
+      <p class="graph-modal__text">
+        С «Живорыбкой» вы не только оптимизируете процесс транспортировки живой рыбы, но и получите
+        возможность уверенно развивать свой бизнес, зная, что рядом есть надежный партнер – TRUCK Industry.
+      </p>
+    </div>
+
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news2">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <p class="graph-modal__text">
+        Захватывающие новости: наша команда выходит на скоростную
+        трассу! Truck Industry, одни из лидеров в области спецтехники, рады
+        объявить о новом захватывающем проекте, который выведет нас на
+        передовые позиции в мире гонок. Мы официально запускаем
+        собственную гоночную команду по дрифту — TI Racing!
+        Этот смелый шаг знаменует собой важную веху в истории нашей
+        компании, поскольку мы расширяем наши горизонты за пределы
+        спецтехники. Обладая страстью к скорости, инновациям и конкуренции,
+        мы стремимся принять участие в гоночных мероприятиях и чемпионатах.
+      </p>
+      <p class="graph-modal__text">
+        Почему гонки? В Truck Industry мы всегда стремились к совершенству и
+        раздвигали границы возможного. Гонки представляют собой
+        окончательное испытание навыков, точности и командной работы. Это
+        место, где передовые технологии встречаются с необузданным
+        талантом, и где стремление к победе объединяет нас всех.
+        Присоединяйтесь к нам в путешествии Мы приглашаем всех наших
+        постоянных клиентов, партнеров и сторонников присоединиться к нам в
+        этом захватывающем путешествии.
+      </p>
+      <p class="graph-modal__text">
+        Следите за обновлениями, закулисным контентом и возможностями
+        взаимодействия с нашей гоночной командой. Мы очень рады этой новой
+        главе в истории нашей компании. Будьте готовы стать свидетелями того,
+        как мы расширяем границы возможностей, бьем рекорды и творим
+        историю в мире гонок. Вместе мы быстро идем к успеху! Давайте усилим
+        азарт и творим историю вместе!
+      </p>
+    </div>
+
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news3">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <p class="graph-modal__text">
+        Представляем новую модель картофелевоза ЯРОВИТ: Снижение ущерба урожаю и увеличение прибыли
+        Мы рады сообщить о выпуске нашей новинки - картофелевоза "ЯРОВИТ". Это революционное
+        пополнение нашего автопарка призвано изменить подход к транспортировке ценных культур, значительно
+        сократив их повреждение и, как следствие, увеличив прибыль вашего бизнеса.
+      </p>
+      <p class="graph-modal__text">
+        Одной из отличительных особенностей Яровита является его удивительная способность снижать ущерб
+        урожаю на 25%. Мы понимаем, что каждый урожай очень ценен, и минимизация ущерба при
+        транспортировке очень важна как для фермеров, так и для дистрибьюторов. С новой моделью
+        картофелевоза вы можете быть уверены, что ваша продукция доедет до места назначения в
+        первозданном виде.
+      </p>
+      <p class="graph-modal__text">
+        Невозможно переоценить прямую зависимость между снижением ущерба урожаю и увеличением
+        прибыли. Меньший ущерб означает более высокое качество продукции, что, в свою очередь, ведет к
+        повышению рыночных цен и удовлетворенности клиентов. Инвестиции в ЯРОВИТ - это не просто покупка
+        транспортного средства, это стратегический шаг, направленный на повышение финансового успеха
+        вашего бизнеса.
+      </p>
+      <p class="graph-modal__text">
+        Выбор новой модели овощевоза YAROVIT - это вклад в будущее вашего сельскохозяйственного бизнеса.
+        Сокращая потери урожая и повышая качество продукции, вы не только улучшаете свою репутацию, но и
+        повышаете свою рентабельность.
+      </p>
+      <p class="graph-modal__text">
+        Не упустите возможность поднять перевозки урожая на новый уровень и увеличить прибыль вашего
+        бизнеса. Присоединяйтесь к нам, чтобы отметить будущее транспортировки сельскохозяйственных
+        культур с помощью новой модели картофелевоза ЯРОВИТ от Truck Industry.
+      </p>
+    </div>
+
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news4">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <p class="graph-modal__text">
+        Главная цель Truck Industry — инновации. Идеология компании
+        подразумевает постоянный поиск новых решений. «Творческие»
+        конкуренты, в массе своей, не охотно берутся за их внедрение.
+        Было не просто найти единомышленников, готовых к творческим
+        экспериментам в сфере производства спецтехники. Ведущий дилер
+        Минского автомобильного завода, ГлавМазТорг, стал идейным
+        партнером Truck Industry, вдохновившись нашими идеями и амбициями.
+        Объединившись, мы вместе по-новому взглянули на индустрию
+        спецтехники.
+      </p>
+      <p class="graph-modal__text">
+
+        Задавать тренды – вот что стало нашей главной совместной миссией.
+        Делать технику для сельского хозяйства и других отраслей максимально
+        удобной, доступной и многофункциональной, заботясь о потребителях и
+        их благосостоянии. Мы постараемся показать, что такое «прибыльная и
+        удобная спецтехника», а также вытеснить морально и технически
+        устаревшую. ГлавМазТорг стал нашим верным партнером во внедрении
+        новых идей и технологий.
+      </p>
+      <p class="graph-modal__text">
+        Начинается новая глава в истории компании! Скоро для вас будет
+        множество интересных и важных новостей.
+      </p>
+    </div>
+
+
+  </div>
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="news5">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque quam autem provident consectetur
+        aspernatur assumenda nam facere mollitia repellendus labore ipsam eum, exercitationem nihil, dolore suscipit?
+        Ad, eius delectus.
+      </p>
+      <p class="graph-modal__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque quam autem provident consectetur
+        aspernatur assumenda nam facere mollitia repellendus labore ipsam eum, exercitationem nihil, dolore suscipit?
+        Ad, eius delectus.
+      </p>
+      <p class="graph-modal__text">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque quam autem provident consectetur
+        aspernatur assumenda nam facere mollitia repellendus labore ipsam eum, exercitationem nihil, dolore suscipit?
+        Ad, eius delectus.
+      </p>
+    </div>
+  </div>
+
+  <!--форма из модального окна-->
+  <div class="graph-modal__container graph-modal__container--form" role="dialog" aria-modal="true"
+    data-graph-target="form">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <h3 class="graph-modal__title title title--section">Форма обратной связи</h3>
+      <p class="graph-modal__text">Пожалуйста, заполните форму, чтобы мы могли связаться с вами в ближайшее время и
+        ответить на все Ваши вопросы!
+      </p>
+      <form action="#" class="form form--modal" novalidate="novalidate">
+        <label class="form__label">
+          <input type="text" name="name" class="input input--light input-name input-reset" placeholder="Имя">
+        </label>
+        <label class="form__label">
+          <input type="tel" name="phone" class="input input--light input-tel input-reset" placeholder="Телефон"
+            inputmode="text">
+        </label>
+        <label class="form__label">
+          <input type="email" name="email" class="input input--light input-email input-reset" placeholder="Почта">
+        </label>
+        <button class="form__btn btn btn--main btn-reset">Отправить</button>
+      </form>
+
+    </div>
+  </div>
+</div>
+
   </div>
 </body>
 

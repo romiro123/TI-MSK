@@ -1,6 +1,10 @@
 .companies {
   &__title {
     margin-bottom: 30px;
+
+    @include mobile {
+      margin-bottom: 20px;
+    }
   }
 
   &__slide {

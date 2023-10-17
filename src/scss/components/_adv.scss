@@ -46,7 +46,7 @@
       }
 
       @include mobile {
-        left: calc((100vw / 2) - 70px);
+        left: 0;
         background-size: 50px;
         height: 50px;
         width: 50px;

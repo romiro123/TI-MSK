@@ -1,6 +1,6 @@
 // Подключение свайпера
-import Swiper, { Navigation, Pagination, Autoplay, Grid, FreeMode, EffectCoverflow, Effect, CenteredSlides, coverflowEffect } from 'swiper';
-Swiper.use([Navigation, Pagination, Autoplay, Grid, FreeMode, EffectCoverflow, Effect, CenteredSlides, coverflowEffect]);
+import Swiper, { Navigation, Pagination, Autoplay, Grid, EffectCoverflow } from 'swiper';
+Swiper.use([Navigation, Pagination, Autoplay, Grid, EffectCoverflow]);
 
 const swiperHero = new Swiper('.swiper--hero', {
   slidesPerView: 1,
@@ -43,6 +43,14 @@ const swiperLizing = new Swiper('.swiper--lizing', {
     nextEl: '.lizing__btn-next',
     prevEl: '.lizing__btn-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    576: {
+      slidesPerView: 2,
+    }
+  }
 });
 
 const swiperProject = new Swiper('.swiper--project', {
@@ -104,7 +112,7 @@ const swiperReviews = new Swiper('.swiper--reviews', {
   },
   breakpoints: {
     320: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     576: {
       slidesPerView: 3,

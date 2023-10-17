@@ -1,0 +1,28 @@
+.graph-modal {
+  &__close {
+    background-image: url(../img/svg/close.svg);
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+  }
+
+  &__container {
+    padding: 30px 20px 20px;
+
+    &--form {
+      max-width: 500px;
+      background-color: #191919;
+      padding: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+}
