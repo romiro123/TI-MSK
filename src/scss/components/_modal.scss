@@ -9,7 +9,9 @@
   }
 
   &__container {
-    padding: 30px 20px 20px;
+    color: var(--light-main);
+    background-color: var(--bg-main);
+    padding: 30px;
 
     &--form {
       max-width: 500px;
@@ -24,5 +26,9 @@
 
   &__text {
     margin-bottom: 15px;
+  }
+
+  &__img {
+    margin-bottom: 25px;
   }
 }

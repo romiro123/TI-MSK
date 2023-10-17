@@ -286,7 +286,9 @@ p {
   height: 25px;
 }
 .graph-modal__container {
-  padding: 30px 20px 20px;
+  color: var(--light-main);
+  background-color: var(--bg-main);
+  padding: 30px;
 }
 .graph-modal__container--form {
   max-width: 500px;
@@ -298,6 +300,9 @@ p {
 }
 .graph-modal__text {
   margin-bottom: 15px;
+}
+.graph-modal__img {
+  margin-bottom: 25px;
 }
 
 .section--black {
@@ -1091,8 +1096,8 @@ p {
   -webkit-filter: brightness(1.5);
   filter: brightness(1.5);
 }
-.companies__icon {
-  height: 100px;
+.companies__img {
+  max-height: 100px;
   max-width: 100%;
 }
 
@@ -1334,8 +1339,10 @@ p {
   height: calc((100% - 30px) / 2) !important;
 }
 .project__card {
-  height: 100%;
   position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .project__img {
   width: 100%;
@@ -1349,7 +1356,9 @@ p {
   bottom: 0;
   left: 0;
   padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--light-main);
+  width: calc(100% - 20px);
 }
 
 .fancybox__slide.has-caption {

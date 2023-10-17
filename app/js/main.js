@@ -255,7 +255,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let myMap = new ymaps.Map("map", {
       center: [55.754485275189325, 37.749262731718204],
       zoom: 16,
-      controls: ['geolocationControl', 'zoomControl']
+      controls: ['zoomControl'],
+      behaviors: ['multiTouch']
     }, {
       suppressMapOpenBlock: true
     });
@@ -265,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
       iconImageSize: [35, 35],
       iconImageOffset: [-15, -42]
     });
-    myMap.behaviors.disable('scrollZoom');
+    myMap.behaviors.disable('scrollZoom').disable('drag').enable('multiTouch');
     myMap.geoObjects.add(myPlacemark);
   }
 });
@@ -403,6 +404,9 @@ const swiperReviews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swipe
   breakpoints: {
     320: {
       slidesPerView: 1
+    },
+    425: {
+      slidesPerView: 2
     },
     576: {
       slidesPerView: 3
