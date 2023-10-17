@@ -444,6 +444,10 @@ p {
   width: 100%;
   height: 100px;
 }
+.swiper--clients {
+  width: 100%;
+  height: 100px;
+}
 .swiper--lizing {
   outline: 1px solid var(--grey-light);
 }

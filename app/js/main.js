@@ -332,6 +332,19 @@ const swiperCompanies = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swi
     }
   }
 });
+const swiperClients = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--clients', {
+  // slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2
+    },
+    576: {
+      slidesPerView: 3
+    }
+  }
+});
 const swiperLizing = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--lizing', {
   slidesPerView: 2,
   loop: true,
@@ -405,7 +418,7 @@ const swiperReviews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swipe
     320: {
       slidesPerView: 1
     },
-    425: {
+    375: {
       slidesPerView: 2
     },
     576: {

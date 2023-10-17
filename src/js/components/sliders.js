@@ -35,6 +35,19 @@ const swiperCompanies = new Swiper('.swiper--companies', {
     }
   }
 });
+const swiperClients = new Swiper('.swiper--clients', {
+  // slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 3,
+    }
+  }
+});
 
 const swiperLizing = new Swiper('.swiper--lizing', {
   slidesPerView: 2,
@@ -114,7 +127,7 @@ const swiperReviews = new Swiper('.swiper--reviews', {
     320: {
       slidesPerView: 1,
     },
-    425: {
+    375: {
       slidesPerView: 2,
     },
     576: {
