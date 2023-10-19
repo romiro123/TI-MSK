@@ -16,8 +16,8 @@
 
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
-  <script defer src="js/main.js"></script>
   <script defer src="https://api-maps.yandex.ru/2.1/?apikey=0e33066e-38ea-4fc2-a7f7-f5f140d2c76d&lang=ru_RU"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body class="page__body">
@@ -86,7 +86,6 @@
 </header>
     <main class="main">
       <section class="section" id="hero">
-  <!-- Slider main container -->
   <div class="swiper swiper--hero">
 
     <div class="swiper-wrapper">
@@ -149,7 +148,111 @@
     <div class="swiper-pagination swiper-pagination--bottom"></div>
   </div>
 </section>
-      
+      <section class="section section--black" id="catalog">
+  <div class="section__container container">
+    <div class="section__content catalog">
+      <h2 class="catalog__title title title--section">Каталог продукции</h2>
+
+      <ul class="list-reset catalog__grid">
+        <li class="atropos catalog__card">
+          <div class="atropos-scale">
+            <div class="atropos-rotate">
+              <div class="atropos-inner catalog__card-inner">
+                <img class="catalog__card-img img" src="img/project/car-1.webp" alt="Наш проект"
+                  data-atropos-offset="-5">
+                <div class="catalog__card-content" data-atropos-offset="5">
+                  <h3 class="catalog__card-title title title--section">Сельхозники</h3>
+                  <button class="catalog__card-btn btn-reset btn btn--main" data-graph-path="card-1">Подробнее
+                    -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="atropos catalog__card">
+          <div class="atropos-scale">
+            <div class="atropos-rotate">
+              <div class="atropos-inner catalog__card-inner">
+                <img class="catalog__card-img img" src="img/project/car-1.webp" alt="Наш проект"
+                  data-atropos-offset="-5">
+                <div class="catalog__card-content" data-atropos-offset="5">
+                  <h3 class="catalog__card-title title title--section">Зерновозы</h3>
+                  <button class="catalog__card-btn btn-reset btn btn--main" data-graph-path="card-2">Подробнее
+                    -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="atropos catalog__card">
+          <div class="atropos-scale">
+            <div class="atropos-rotate">
+              <div class="atropos-inner catalog__card-inner">
+                <img class="catalog__card-img img" src="img/project/car-1.webp" alt="Наш проект"
+                  data-atropos-offset="-5">
+                <div class="catalog__card-content" data-atropos-offset="5">
+                  <h3 class="catalog__card-title title title--section">Овощевозы</h3>
+                  <button class="catalog__card-btn btn-reset btn btn--main" data-graph-path="card-3">Подробнее
+                    -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="atropos catalog__card">
+          <div class="atropos-scale">
+            <div class="atropos-rotate">
+              <div class="atropos-inner catalog__card-inner">
+                <img class="catalog__card-img img" src="img/project/car-1.webp" alt="Наш проект"
+                  data-atropos-offset="-5">
+                <div class="catalog__card-content" data-atropos-offset="5">
+                  <h3 class="catalog__card-title title title--section">Прицепы</h3>
+                  <button class="catalog__card-btn btn-reset btn btn--main" data-graph-path="card-4">Подробнее
+                    -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="atropos catalog__card">
+          <div class="atropos-scale">
+            <div class="atropos-rotate">
+              <div class="atropos-inner catalog__card-inner">
+                <img class="catalog__card-img img" src="img/project/car-1.webp" alt="Наш проект"
+                  data-atropos-offset="-5">
+                <div class="catalog__card-content" data-atropos-offset="5">
+                  <h3 class="catalog__card-title title title--section">Самосвалы с задней разгрузкой</h3>
+                  <button class="catalog__card-btn btn-reset btn btn--main" data-graph-path="card-5">Подробнее
+                    -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="atropos catalog__card">
+          <div class="atropos-scale">
+            <div class="atropos-rotate">
+              <div class="atropos-inner catalog__card-inner">
+                <img class="catalog__card-img img" src="img/project/car-1.webp" alt="Наш проект"
+                  data-atropos-offset="-5">
+                <div class="catalog__card-content" data-atropos-offset="5">
+                  <h3 class="catalog__card-title title title--section">Полуприцепы</h3>
+                  <button class="catalog__card-btn btn-reset btn btn--main" data-graph-path="card-6">Подробнее
+                    -></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
       <section class="section" id="lizing">
   <div class="section__container container">
     <div class="section__content lizing">
@@ -170,9 +273,6 @@
 
             <div class="swiper-wrapper">
               <div class="lizing__slide swiper-slide">
-                <!-- <svg class="lizing__icon">
-                  <use xlink:href="img/sprite.svg#sber-lizing"></use>
-                </svg> -->
                 <img class="companies__img img" src="img/svg/sber-lizing.svg" alt="СБЕР Лизинг">
               </div>
 
@@ -345,9 +445,6 @@
       <div class="swiper swiper--companies">
         <div class="swiper-wrapper">
           <div class="companies__slide swiper-slide">
-            <!-- <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#alfaplus"></use>
-            </svg> -->
             <img class="companies__img img" src="img/svg/alfaplus.svg" alt="Альфа Плюс">
           </div>
 
@@ -537,9 +634,6 @@
 
         <div class="swiper-wrapper">
           <div class="companies__slide swiper-slide">
-            <!-- <svg class="companies__icon">
-              <use xlink:href="img/sprite.svg#alfaplus"></use>
-            </svg> -->
             <img class="companies__img img" src="img/svg/alfaplus.svg" alt="Альфа Плюс">
           </div>
 
@@ -788,10 +882,6 @@
 
     </div>
 
-
-    <!-- <div class="footer__bottom">
-
-    </div> -->
   </div>
 </footer>
     <div class="graph-modal">
@@ -1004,6 +1094,275 @@
         <button class="form__btn btn btn--main btn-reset">Отправить</button>
       </form>
 
+    </div>
+  </div>
+
+
+  <!--описания карточек из категории-->
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-1">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Оптимизированная компоновка бортов для многозадачности. Идеально подходит для перевозки
+        урожая, удобрений и с/х инвентаря.</p>
+
+      <span class="graph-modal__title title">Объем кузова:</span>
+      <div class="graph-modal__select-wrapp">
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">От</option>
+            <option>10 м³</option>
+            <option>40 м³</option>
+            <option>50 м³</option>
+            <option>60 м³</option>
+            <option>70 м³</option>
+            <option>80 м³</option>
+          </select>
+        </div>
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">До</option>
+            <option>100 м³</option>
+            <option>400 м³</option>
+            <option>500 м³</option>
+            <option>600 м³</option>
+            <option>700 м³</option>
+            <option>800 м³</option>
+          </select>
+        </div>
+      </div>
+      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+
+    </div>
+  </div>
+
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-2">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Специализированный кузов для зерновых культур. Отличное решение для перевозки урожая с
+        минимальными потерями.</p>
+
+      <span class="graph-modal__title title">Объем кузова:</span>
+      <div class="graph-modal__select-wrapp">
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">От</option>
+            <option>10 м³</option>
+            <option>40 м³</option>
+            <option>50 м³</option>
+            <option>60 м³</option>
+            <option>70 м³</option>
+            <option>80 м³</option>
+          </select>
+        </div>
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">До</option>
+            <option>100 м³</option>
+            <option>400 м³</option>
+            <option>500 м³</option>
+            <option>600 м³</option>
+            <option>700 м³</option>
+            <option>800 м³</option>
+          </select>
+        </div>
+      </div>
+      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+
+    </div>
+  </div>
+
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-3">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Быстрая и бережная горизонтальная разгрузка. Гарантирует сохранность овощей и уменьшает
+        потери урожая до 25%.
+      </p>
+
+      <span class="graph-modal__title title">Объем кузова:</span>
+      <div class="graph-modal__select-wrapp">
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">От</option>
+            <option>10 м³</option>
+            <option>40 м³</option>
+            <option>50 м³</option>
+            <option>60 м³</option>
+            <option>70 м³</option>
+            <option>80 м³</option>
+          </select>
+        </div>
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">До</option>
+            <option>100 м³</option>
+            <option>400 м³</option>
+            <option>500 м³</option>
+            <option>600 м³</option>
+            <option>700 м³</option>
+            <option>800 м³</option>
+          </select>
+        </div>
+      </div>
+      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+
+    </div>
+  </div>
+
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-4">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Увеличьте свою грузоподъемность. Повышенная производительность и надежность для
+        различных грузов.
+      </p>
+
+      <span class="graph-modal__title title">Грузоподъемность:</span>
+      <div class="graph-modal__select-wrapp">
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">От</option>
+            <option>10 м³</option>
+            <option>40 м³</option>
+            <option>50 м³</option>
+            <option>60 м³</option>
+            <option>70 м³</option>
+            <option>80 м³</option>
+          </select>
+        </div>
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">До</option>
+            <option>100 м³</option>
+            <option>400 м³</option>
+            <option>500 м³</option>
+            <option>600 м³</option>
+            <option>700 м³</option>
+            <option>800 м³</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+    </div>
+  </div>
+
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-5">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Эффективная задняя разгрузка. Идеальный выбор для строительства и транспортировки
+        крупногабаритных материалов.
+      </p>
+
+      <span class="graph-modal__title title">Объем кузова:</span>
+      <div class="graph-modal__select-wrapp">
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">От</option>
+            <option>10 м³</option>
+            <option>40 м³</option>
+            <option>50 м³</option>
+            <option>60 м³</option>
+            <option>70 м³</option>
+            <option>80 м³</option>
+          </select>
+        </div>
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">До</option>
+            <option>100 м³</option>
+            <option>400 м³</option>
+            <option>500 м³</option>
+            <option>600 м³</option>
+            <option>700 м³</option>
+            <option>800 м³</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+    </div>
+  </div>
+
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-6">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <picture>
+        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
+        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
+        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
+        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
+      </picture>
+      <p class="graph-modal__text">
+        Функциональность и прочность в каждом элементе. Прекрасный выбор для долгосрочных
+        грузоперевозок и сложных логистических задач.
+      </p>
+
+      <span class="graph-modal__title title">Объем кузова:</span>
+      <div class="graph-modal__select-wrapp">
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">От</option>
+            <option>10 м³</option>
+            <option>40 м³</option>
+            <option>50 м³</option>
+            <option>60 м³</option>
+            <option>70 м³</option>
+            <option>80 м³</option>
+          </select>
+        </div>
+        <div class="graph-modal__select">
+          <select class="default">
+            <option value="">До</option>
+            <option>100 м³</option>
+            <option>400 м³</option>
+            <option>500 м³</option>
+            <option>600 м³</option>
+            <option>700 м³</option>
+            <option>800 м³</option>
+          </select>
+        </div>
+      </div>
+      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
     </div>
   </div>
 </div>

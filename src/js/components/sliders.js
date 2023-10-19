@@ -26,6 +26,7 @@ const swiperCompanies = new Swiper('.swiper--companies', {
   // slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
+  grabCursor: true,
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -39,6 +40,7 @@ const swiperClients = new Swiper('.swiper--clients', {
   // slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
+  grabCursor: true,
   breakpoints: {
     320: {
       slidesPerView: 2,
@@ -52,6 +54,7 @@ const swiperClients = new Swiper('.swiper--clients', {
 const swiperLizing = new Swiper('.swiper--lizing', {
   slidesPerView: 2,
   loop: true,
+  grabCursor: true,
   navigation: {
     nextEl: '.lizing__btn-next',
     prevEl: '.lizing__btn-prev',

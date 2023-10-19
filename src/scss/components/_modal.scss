@@ -18,9 +18,11 @@
       background-color: #191919;
       padding: 30px;
     }
+
   }
 
   &__title {
+    display: block;
     margin-bottom: 20px;
   }
 
@@ -30,5 +32,21 @@
 
   &__img {
     margin-bottom: 25px;
+  }
+
+
+  &__select-wrapp {
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__select {
+    width: 100px;
+  }
+
+  &__btn-form {
+    margin-top: 10px;
   }
 }

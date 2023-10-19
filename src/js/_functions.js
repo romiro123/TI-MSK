@@ -29,25 +29,6 @@ import { burger } from './functions/burger';
 // Реализация включения скролла (не забудьте вызвать функцию)
 // import { enableScroll } from './functions/enable-scroll';
 
-// Реализация модального окна
-// import GraphModal from 'graph-modal';
-// const modal = new GraphModal();
-
-// Реализация табов
-// import GraphTabs from 'graph-tabs';
-// const tabs = new GraphTabs('tab');
-
-// Получение высоты шапки сайта (не забудьте вызвать функцию)
-// import { getHeaderHeight } from './functions/header-height';
-
-// Подключение плагина кастом-скролла
-// import 'simplebar';
-
-// Подключение плагина для позиционирования тултипов
-// import { createPopper, right} from '@popperjs/core';
-// createPopper(el, tooltip, {
-//   placement: 'right'
-// });
 
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';
@@ -64,10 +45,6 @@ import { burger } from './functions/burger';
 // import Rellax from 'rellax';
 // const rellax = new Rellax('.rellax');
 
-// Подключение плавной прокрутки к якорям
-// import SmoothScroll from 'smooth-scroll';
-// const scroll = new SmoothScroll('a[href*="#"]');
-
 // Подключение событий свайпа на мобильных
 // import 'swiped-events';
 // document.addEventListener('swiped', function(e) {
@@ -75,12 +52,3 @@ import { burger } from './functions/burger';
 //   console.log(e.detail);
 //   console.log(e.detail.dir);
 // });
-
-// import { validateForms } from './functions/validate-forms';
-// const rules1 = [...];
-
-// const afterForm = () => {
-//   console.log('Произошла отправка, тут можно писать любые действия');
-// };
-
-// validateForms('.form-1', rules1, afterForm);

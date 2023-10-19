@@ -12,11 +12,8 @@
 
   &__title {}
 
-  // &__swiper {
-  //   margin-bottom: 30px;
-  // }
-
   &__slide {
+    cursor: pointer;
     transition: filter 0.3s ease;
     filter: brightness(.5);
 
@@ -40,7 +37,6 @@
   &__img {
     height: 125px;
     width: 100%;
-    // object-position: top;
     object-fit: contain;
   }
 

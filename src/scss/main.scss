@@ -6,6 +6,7 @@
 
 @import "./components/burger";
 @import "./components/modal";
+@import "./components/choices-custom";
 @import "./components/section";
 @import "./components/title";
 @import "./components/swiper";
@@ -17,8 +18,6 @@
 @import "./components/map";
 @import "./components/nav";
 
-// @import "./components/icon";
-
 
 // подключения компонентов страницы
 @import "./components/header";
@@ -26,7 +25,6 @@
 @import "./components/about";
 @import "./components/companies";
 @import "./components/catalog";
-@import "./components/card";
 @import "./components/lizing";
 @import "./components/project";
 @import "./components/news";

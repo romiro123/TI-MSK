@@ -6,5 +6,6 @@ import './components/modal';
 import './components/validation';
 import './components/map';
 import './components/header-scroll';
-// import './components/cards-animate';
+import './components/atropos';
+import './components/choices';
 
