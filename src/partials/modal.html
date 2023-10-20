@@ -211,6 +211,31 @@
     </div>
   </div>
 
+  <!--форма категории-->
+  <div class="graph-modal__container graph-modal__container--form" role="dialog" aria-modal="true"
+    data-graph-target="card-form">
+    <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
+
+    <div class="graph-modal__content">
+      <h3 class="graph-modal__title title title--section">Форма обратной связи</h3>
+      <p class="graph-modal__text">FORM CARD
+      </p>
+      <form action="#" class="form form--card" novalidate="novalidate">
+        <label class="form__label">
+          <input type="text" name="name" class="input input--light input-name input-reset" placeholder="Имя">
+        </label>
+        <label class="form__label">
+          <input type="tel" name="phone" class="input input--light input-tel input-reset" placeholder="Телефон">
+        </label>
+        <label class="form__label">
+          <input type="email" name="email" class="input input--light input-email input-reset" placeholder="Почта">
+        </label>
+        <button class="form__btn btn btn--main btn-reset">Отправить</button>
+      </form>
+
+    </div>
+  </div>
+
 
   <!--описания карточек из категории-->
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-1">
@@ -230,7 +255,7 @@
       <span class="graph-modal__title title">Объем кузова:</span>
       <div class="graph-modal__select-wrapp">
         <div class="graph-modal__select">
-          <select class="default">
+          <select class="select-first default">
             <option value="">От</option>
             <option>10 м³</option>
             <option>40 м³</option>
@@ -241,7 +266,7 @@
           </select>
         </div>
         <div class="graph-modal__select">
-          <select class="default">
+          <select class="select-second default">
             <option value="">До</option>
             <option>100 м³</option>
             <option>400 м³</option>
@@ -251,8 +276,30 @@
             <option>800 м³</option>
           </select>
         </div>
+
+
+
+
+
       </div>
-      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
+
+
+      <div id="slider"></div>
+
+      <!-- <div class="filter__range range">
+        <div class="range__top">
+          <label class="range__label">
+            <span class="range__text">от</span>
+            <input class="range__input" id="input-number-before">
+          </label>
+          <label class="range__label">
+            <span class="range__text">до</span>
+            <input class="range__input" id="input-number-after">
+          </label>
+        </div>
+        <div class="range__slider" id="rangeSlider"></div>
+      </div> -->
 
     </div>
   </div>
@@ -296,7 +343,7 @@
           </select>
         </div>
       </div>
-      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
 
     </div>
   </div>
@@ -341,7 +388,7 @@
           </select>
         </div>
       </div>
-      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
 
     </div>
   </div>
@@ -387,7 +434,7 @@
         </div>
       </div>
 
-      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
     </div>
   </div>
 
@@ -432,7 +479,7 @@
         </div>
       </div>
 
-      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
     </div>
   </div>
 
@@ -476,7 +523,7 @@
           </select>
         </div>
       </div>
-      <button class="graph-modal__btn-form btn btn--main btn-reset" data-graph-path="form">Оставить заявку</button>
+      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
     </div>
   </div>
 </div>

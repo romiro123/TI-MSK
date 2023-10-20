@@ -12,6 +12,10 @@
     margin-bottom: 80px;
   }
 
+  &:first-child {
+    margin-bottom: 0;
+  }
+
   &__content {
     border-radius: 35px;
     background-color: #000000;

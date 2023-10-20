@@ -16,7 +16,15 @@
 
   &__content {
     max-width: 850px;
-    padding: 0 var(--content-offset);
+    padding: 0 60px;
+
+    @include tablet {
+      padding: 0 40px;
+    }
+
+    @include small-tablet {
+      padding: 0 30px;
+    }
   }
 
   &__title {
