@@ -241,289 +241,308 @@
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-1">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
 
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Оптимизированная компоновка бортов для многозадачности. Идеально подходит для перевозки
-        урожая, удобрений и с/х инвентаря.</p>
-
-      <span class="graph-modal__title title">Объем кузова:</span>
-      <div class="graph-modal__select-wrapp">
-        <div class="graph-modal__select">
-          <select class="select-first default">
-            <option value="">От</option>
-            <option>10 м³</option>
-            <option>40 м³</option>
-            <option>50 м³</option>
-            <option>60 м³</option>
-            <option>70 м³</option>
-            <option>80 м³</option>
-          </select>
-        </div>
-        <div class="graph-modal__select">
-          <select class="select-second default">
-            <option value="">До</option>
-            <option>100 м³</option>
-            <option>400 м³</option>
-            <option>500 м³</option>
-            <option>600 м³</option>
-            <option>700 м³</option>
-            <option>800 м³</option>
-          </select>
-        </div>
-
-
-
-
-
+    <div class="graph-modal__content card-modal">
+      <h3 class="card-modal__title title">Прицепы</h3>
+      <div class="card-modal__description">
+        <p class="card-modal__text">
+          Изготовим под заказ 2-х и 3-х осные прицепы для транспортировки вашего урожая, удобрения, с/х
+          инвентаря, овощей, щепы, леса, контейнера. 2-х или 3-х сторонняя разгрузка. Повышенная
+          производительность, ремонтопригодность и надежность для различных грузов. Грузоподъемность
+          от 12000 до 26000 кг. Надрамник изготовлен из высокопрочной стали S500. Качественная
+          итальянская гидравлика от Interpump Hydraulics. Долговечное ЛКП с SuperTraffic защищает от
+          коррозии и ультрафиолета.
+        </p>
+        <p class="card-modal__text">
+          Выбирайте «Назначение» и «Кубатуру», затем отправляйте заявку.
+        </p>
       </div>
-      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
 
+      <a class="card-modal__gallery" href="img/project/car-1.webp" data-fancybox>
+        <img class="card-modal__img" src="img/project/thumb-car-1.webp" alt="card">
+      </a>
 
-      <div id="slider"></div>
-
-      <!-- <div class="filter__range range">
-        <div class="range__top">
-          <label class="range__label">
-            <span class="range__text">от</span>
-            <input class="range__input" id="input-number-before">
-          </label>
-          <label class="range__label">
-            <span class="range__text">до</span>
-            <input class="range__input" id="input-number-after">
-          </label>
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Назначение:</span>
+        <div class="card-modal__select select">
+          <select class="select-first default">
+            <option value="">Назначение</option>
+            <option>Зерновоз</option>
+            <option>Сельхозник</option>
+            <option>Овощевоз (20 или 24 куба)</option>
+            <option>Щеповоз (только 30 кубов)</option>
+            <option>Сортиментовоз (только 30 кубов)</option>
+            <option>Контейнеровоз (только для 20 фут)</option>
+          </select>
         </div>
-        <div class="range__slider" id="rangeSlider"></div>
-      </div> -->
+      </div>
 
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Объем кузова:</span>
+        <div class="card-modal__range">
+          <div class="range" id="range-pricep"></div>
+        </div>
+      </div>
+
+      <button class="card-modal__btn btn btn--main btn-reset" data-graph-path="card-form">Оставить
+        заявку</button>
     </div>
   </div>
-
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-2">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
 
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Специализированный кузов для зерновых культур. Отличное решение для перевозки урожая с
-        минимальными потерями.</p>
+    <div class="graph-modal__content card-modal">
+      <h3 class="card-modal__title title">Сельскохозники</h3>
+      <div class="card-modal__description">
+        <p class="card-modal__text">
+          Идеально подходят для перевозки вашего урожая (зерно, семена, рис, кукуруза, бобы), удобрений
+          и с/х инвентаря. Надрамник из высокопрочной стали S500. Качественная итальянская гидравлика
+          от Interpump Hydraulics. Долговечное ЛКП с SuperTraffic защищает от коррозии и ультрафиолета.
+          Объем кузова от 14 м³ до 40 м³.
+        </p>
+        <p class="card-modal__text">
+          Изготавливаем на любом шасси.
+        </p>
+        <ul class="list-reset card-modal__text">
+          <li>6х4, 4х2, 8х4, 6х6, 8х8.</li>
+          <li>2-х и 3-х сторонняя разгрузка.</li>
+          <li>Saic IVECO Hongyan, SHACMAN, МАЗ, КамАЗ.</li>
+        </ul>
+        <p class="card-modal__text">
+          Выбирайте «Шасси» и «Кубатуру», затем отправляйте заявку.
+        </p>
 
-      <span class="graph-modal__title title">Объем кузова:</span>
-      <div class="graph-modal__select-wrapp">
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">От</option>
-            <option>10 м³</option>
-            <option>40 м³</option>
-            <option>50 м³</option>
-            <option>60 м³</option>
-            <option>70 м³</option>
-            <option>80 м³</option>
-          </select>
-        </div>
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">До</option>
-            <option>100 м³</option>
-            <option>400 м³</option>
-            <option>500 м³</option>
-            <option>600 м³</option>
-            <option>700 м³</option>
-            <option>800 м³</option>
+      </div>
+
+      <a class="card-modal__gallery" href="img/project/car-1.webp" data-fancybox>
+        <img class="card-modal__img" src="img/project/thumb-car-1.webp" alt="card">
+      </a>
+
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Шасси:</span>
+        <div class="card-modal__select select">
+          <select class="select-first default">
+            <option value="">Шасси</option>
+            <option>Saic IVECO Hongyan</option>
+            <option>SHACMAN</option>
+            <option>МАЗ</option>
+            <option>КамАЗ</option>
           </select>
         </div>
       </div>
-      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
 
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Кубатура:</span>
+        <div class="card-modal__range">
+          <div class="range" id="range-selchoz"></div>
+        </div>
+      </div>
+
+      <button class="card-modal__btn btn btn--main btn-reset" data-graph-path="card-form">Оставить
+        заявку</button>
     </div>
   </div>
-
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-3">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
 
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Быстрая и бережная горизонтальная разгрузка. Гарантирует сохранность овощей и уменьшает
-        потери урожая до 25%.
-      </p>
+    <div class="graph-modal__content card-modal">
+      <h3 class="card-modal__title title">Овощевозы</h3>
+      <div class="card-modal__description">
+        <p class="card-modal__text">
+          «Яровит». Быстрая и бережная горизонтальная разгрузка. Гарантирует сохранность ваших овощей
+          и уменьшает бой урожая на 25%. Горизонтальная разгрузка гарантирует сохранность каждого
+          плода или овоща Эллипсовидное сечение кузова для равномерного распределения нагрузки.
+          Ленты-гасители для бережной погрузки продукции. Надрамник из высокопрочной стали S500.
+          Качественная итальянская гидравлика от Interpump Hydraulics. Долговечное ЛКП с SuperTraffic
+          защищает от коррозии и ультрафиолета. Объем 20 м³ или 24 м³.
+        </p>
+        <p class="card-modal__text">
+          Выбирайте «Шасси» и «Кубатуру», затем отправляйте заявку.
+        </p>
+      </div>
 
-      <span class="graph-modal__title title">Объем кузова:</span>
-      <div class="graph-modal__select-wrapp">
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">От</option>
-            <option>10 м³</option>
-            <option>40 м³</option>
-            <option>50 м³</option>
-            <option>60 м³</option>
-            <option>70 м³</option>
-            <option>80 м³</option>
-          </select>
-        </div>
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">До</option>
-            <option>100 м³</option>
-            <option>400 м³</option>
-            <option>500 м³</option>
-            <option>600 м³</option>
-            <option>700 м³</option>
-            <option>800 м³</option>
+      <a class="card-modal__gallery" href="img/project/car-1.webp" data-fancybox>
+        <img class="card-modal__img" src="img/project/thumb-car-1.webp" alt="card">
+      </a>
+
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Шасси:</span>
+        <div class="card-modal__select select">
+          <select class="select-first default">
+            <option value="">Шасси</option>
+            <option>Saic IVECO Hongyan</option>
+            <option>SHACMAN</option>
+            <option>МАЗ</option>
+            <option>КамАЗ</option>
           </select>
         </div>
       </div>
-      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
 
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Кубатура:</span>
+        <div class="card-modal__range">
+          <div class="range" id="range-ovoshch"></div>
+        </div>
+      </div>
+
+      <button class="card-modal__btn btn btn--main btn-reset" data-graph-path="card-form">Оставить
+        заявку</button>
     </div>
   </div>
-
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-4">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
 
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Увеличьте свою грузоподъемность. Повышенная производительность и надежность для
-        различных грузов.
-      </p>
+    <div class="graph-modal__content card-modal">
+      <h3 class="card-modal__title title">Самосвалы с задней разгрузкой</h3>
+      <div class="card-modal__description">
+        <p class="card-modal__text">
+          Half-Pipe. Самосвалы с задней разгрузкой идеально подходят для перевозки строительных
+          материалов, добычи минералов и оптимизации земляных работ, представляя собой ключевое
+          оборудование в строительной и горнодобывающей отраслях.
+          Надрамник из высокопрочной стали S500. Качественная итальянская гидравлика от Interpump
+          Hydraulics. Долговечное ЛКП с SuperTraffic защищает от коррозии и ультрафиолета. Объем кузова
+          от 8 до 28 кубов.
+        </p>
+        <p class="card-modal__text">
+          Изготавливаем на любом шасси.
+        </p>
+        <ul class="list-reset card-modal__text">
+          <li>6х4, 4х2, 8х4, 6х6, 8х8.</li>
+          <li>Saic IVECO Hongyan, SHACMAN, МАЗ, КамАЗ.</li>
+        </ul>
+        <p class="card-modal__text">
+          Выбирайте «Шасси» и «Кубатуру», затем отправляйте заявку.
+        </p>
+      </div>
 
-      <span class="graph-modal__title title">Грузоподъемность:</span>
-      <div class="graph-modal__select-wrapp">
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">От</option>
-            <option>10 м³</option>
-            <option>40 м³</option>
-            <option>50 м³</option>
-            <option>60 м³</option>
-            <option>70 м³</option>
-            <option>80 м³</option>
-          </select>
-        </div>
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">До</option>
-            <option>100 м³</option>
-            <option>400 м³</option>
-            <option>500 м³</option>
-            <option>600 м³</option>
-            <option>700 м³</option>
-            <option>800 м³</option>
+      <a class="card-modal__gallery" href="img/project/car-1.webp" data-fancybox>
+        <img class="card-modal__img" src="img/project/thumb-car-1.webp" alt="card">
+      </a>
+
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Шасси:</span>
+        <div class="card-modal__select select">
+          <select class="select-first default">
+            <option value="">Шасси</option>
+            <option>Saic IVECO Hongyan</option>
+            <option>SHACMAN</option>
+            <option>МАЗ</option>
+            <option>КамАЗ</option>
           </select>
         </div>
       </div>
 
-      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Кубатура:</span>
+        <div class="card-modal__range">
+          <div class="range" id="range-samosval"></div>
+        </div>
+      </div>
+
+      <button class="card-modal__btn btn btn--main btn-reset" data-graph-path="card-form">Оставить
+        заявку</button>
     </div>
   </div>
-
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-5">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
 
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Эффективная задняя разгрузка. Идеальный выбор для строительства и транспортировки
-        крупногабаритных материалов.
-      </p>
+    <div class="graph-modal__content card-modal">
+      <h3 class="card-modal__title title">Полуприцепы</h3>
+      <div class="card-modal__description">
+        <p class="card-modal__text">
+          Изготавливаем под заказ надежные полуприцепы. Зерновозы, сортиментовозы, рыбовозы,
+          овощевозы. Функциональность и прочность в каждом элементе. Прекрасный выбор для
+          долгосрочных грузоперевозок и сложных логистических задач. Высокопрочная сталь S500.
+          Качественная итальянская гидравлика от Interpump Hydraulics. Долговечное ЛКП с SuperTraffic
+          защищает от коррозии и ультрафиолета. Объем полуприцепов от 30 до 65 кубов.
+        </p>
+        <p class="card-modal__text">
+          Выбирайте «Назначение» и «Кубатуру», затем отправляйте заявку.
+        </p>
+      </div>
 
-      <span class="graph-modal__title title">Объем кузова:</span>
-      <div class="graph-modal__select-wrapp">
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">От</option>
-            <option>10 м³</option>
-            <option>40 м³</option>
-            <option>50 м³</option>
-            <option>60 м³</option>
-            <option>70 м³</option>
-            <option>80 м³</option>
-          </select>
-        </div>
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">До</option>
-            <option>100 м³</option>
-            <option>400 м³</option>
-            <option>500 м³</option>
-            <option>600 м³</option>
-            <option>700 м³</option>
-            <option>800 м³</option>
+      <a class="card-modal__gallery" href="img/project/car-1.webp" data-fancybox>
+        <img class="card-modal__img" src="img/project/thumb-car-1.webp" alt="card">
+      </a>
+
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Назначение:</span>
+        <div class="card-modal__select select">
+          <select class="select-first default">
+            <option value="">Назначение</option>
+            <option>Зерновоз</option>
+            <option>Овощевоз</option>
+            <option>Рыбовоз</option>
+            <option>Другое</option>
           </select>
         </div>
       </div>
 
-      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Кубатура:</span>
+        <div class="card-modal__range">
+          <div class="range" id="range-polupritsep"></div>
+        </div>
+      </div>
+
+      <button class="card-modal__btn btn btn--main btn-reset" data-graph-path="card-form">Оставить
+        заявку</button>
     </div>
   </div>
-
   <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="card-6">
     <button class="btn-reset js-modal-close graph-modal__close" aria-label="Закрыть модальное окно"></button>
 
-    <div class="graph-modal__content">
-      <picture>
-        <!-- <source srcset="img/events/320/events1.jpg" media="(max-width: 767px)">
-        <source srcset="img/events/768/events1.jpg" media="(max-width: 1023px)">
-        <source srcset="img/events/1024/events1.jpg" media="(max-width: 1439px)"> -->
-        <img class="graph-modal__img img" src="img/project/car-1.webp" alt="">
-      </picture>
-      <p class="graph-modal__text">
-        Функциональность и прочность в каждом элементе. Прекрасный выбор для долгосрочных
-        грузоперевозок и сложных логистических задач.
-      </p>
+    <div class="graph-modal__content card-modal">
+      <h3 class="card-modal__title title">Индивидуальный заказ</h3>
+      <div class="card-modal__description">
+        <p class="card-modal__text">
+          Вы можете заказать нестандартную технику под конкретные задачи. Мы уже разработали не один
+          совершенно новый вид грузовой техники для наших партнеров. Овощевоз с горизонтальной
+          разгрузкой - «Яровит». Полуприцеп для транспортировки живой рыбы – «Живорыбка».
+          Собственные разработки нашего конструкторского бюро. Мы можем разработать индивидуальный
+          проект подходящий Вашему бизнесу.
+        </p>
+        <p class="card-modal__text">
+          Выбирайте «Категорию» и «Назначение», затем отправляйте заявку.
+        </p>
+      </div>
 
-      <span class="graph-modal__title title">Объем кузова:</span>
-      <div class="graph-modal__select-wrapp">
-        <div class="graph-modal__select">
-          <select class="default">
+      <a class="card-modal__gallery" href="img/project/car-1.webp" data-fancybox>
+        <img class="card-modal__img" src="img/project/thumb-car-1.webp" alt="card">
+      </a>
+
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Категория:</span>
+        <div class="card-modal__select select">
+          <select class="select-first default">
             <option value="">От</option>
-            <option>10 м³</option>
-            <option>40 м³</option>
-            <option>50 м³</option>
-            <option>60 м³</option>
-            <option>70 м³</option>
-            <option>80 м³</option>
-          </select>
-        </div>
-        <div class="graph-modal__select">
-          <select class="default">
-            <option value="">До</option>
-            <option>100 м³</option>
-            <option>400 м³</option>
-            <option>500 м³</option>
-            <option>600 м³</option>
-            <option>700 м³</option>
-            <option>800 м³</option>
+            <option>Автомобиль</option>
+            <option>Прицеп</option>
+            <option>Полуприцеп</option>
+            <option>Автопоезд</option>
           </select>
         </div>
       </div>
-      <button class="graph-modal__btn-card btn btn--main btn-reset" data-graph-path="card-form">Оставить заявку</button>
+
+      <div class="card-modal__option">
+        <span class="card-modal__subtitle title">Назначение:</span>
+        <div class="card-modal__select select">
+          <select class="select-second default">
+            <option value="">Назначение</option>
+            <option>Строительство</option>
+            <option>Сельское хозяйство</option>
+            <option>Лесное хозяйство</option>
+            <option>Транспортные и логистические компании</option>
+            <option>Горнодобывающая индустрия</option>
+            <option>Рециклинг и обращение с отходами</option>
+            <option>Торговля и доставка товаров</option>
+            <option>Промышленное производство и машиностроение</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="card-modal__btn btn btn--main btn-reset" data-graph-path="card-form">Оставить
+        заявку</button>
     </div>
   </div>
+
 </div>

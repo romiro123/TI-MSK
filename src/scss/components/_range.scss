@@ -1,0 +1,29 @@
+.range {
+  height: 10px;
+  width: 100%;
+
+  & .noUi-connect {
+    background: var(--accent);
+  }
+
+  & .noUi-handle {
+    height: 18px;
+    width: 18px;
+    top: -5px;
+    right: -9px;
+    /* half the width */
+    border-radius: 9px;
+  }
+
+  & .noUi-handle:after,
+  .noUi-handle:before {
+    display: none;
+  }
+
+  & .noUi-tooltip {
+    background-color: var(--bg-main);
+    color: var(--light-main);
+    border: 1px solid var(--light-main);
+    line-height: 16px;
+  }
+}
