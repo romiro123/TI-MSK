@@ -1374,7 +1374,6 @@ p {
   .catalog__grid {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
   }
 }
 .catalog__card {
