@@ -23,7 +23,7 @@ export const validateForms = (selector, rules, afterSend) => {
       if (item.tel) {
         item.rules.push({
           rule: 'function',
-          validator: function() {
+          validator: function () {
             const phone = telSelector.inputmask.unmaskedvalue();
             return phone.length === 10;
           },
@@ -41,8 +41,10 @@ export const validateForms = (selector, rules, afterSend) => {
   }
 
   validation.onSuccess((ev) => {
-    let formData = new FormData(ev.target);
+    let params = JSON.parse(sessionStorage.getItem('params'))
+    console.log(params)
 
+    let formData = new FormData(ev.target);
     let xhr = new XMLHttpRequest();
 
     xhr.onreadystatechange = function () {
@@ -56,9 +58,9 @@ export const validateForms = (selector, rules, afterSend) => {
       }
     }
 
+
     xhr.open('POST', 'mail.php', true);
     xhr.send(formData);
-
     ev.target.reset();
   })
 

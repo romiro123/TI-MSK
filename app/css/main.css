@@ -324,6 +324,9 @@ p {
 .graph-modal__btn-card {
   margin-top: 10px;
 }
+.graph-modal__text-result span {
+  margin-right: 5px;
+}
 
 .choices__list--dropdown .choices__item--selectable,
 .choices__list[aria-expanded] .choices__item--selectable {

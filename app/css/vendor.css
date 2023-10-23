@@ -369,7 +369,7 @@ html {
   right: 0;
   bottom: 0;
   z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   cursor: pointer;
   overflow-y: auto;
   overflow-x: hidden;
@@ -393,7 +393,7 @@ html {
   margin: 50px auto;
   display: inline-block;
   vertical-align: middle;
-  background-color: #fff;
+  background-color: rgb(46 46 46/90%);
   border-radius: 10px;
   padding: 20px;
   cursor: default;
@@ -428,6 +428,20 @@ html {
 
 .graph-modal__container.graph-modal-open {
   display: inline-block;
+}
+
+.graph-modal__img {
+  width: 100%;
+  max-height: 300px;
+  margin-bottom: 15px;
+}
+
+.graph-modal__text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.graph-modal__text {
+  margin-bottom: 10px;
 }
 
 .fade {
