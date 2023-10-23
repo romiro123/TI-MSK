@@ -343,7 +343,7 @@ p {
   -webkit-transition: border-color 0.2s ease-in-out;
   transition: border-color 0.2s ease-in-out;
   border-radius: 6px;
-  z-index: 2;
+  z-index: 5;
   position: relative;
 }
 
@@ -376,7 +376,7 @@ p {
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
-  z-index: 3;
+  z-index: 5;
   -webkit-transition: margin 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   transition: margin 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, margin 0.2s ease-in-out;
@@ -402,9 +402,14 @@ p {
   border-top: 1px solid var(--grey) !important;
   border-left: 1px solid var(--grey) !important;
   border-right: 1px solid var(--grey) !important;
-  border-bottom: 1px solid transparent !important;
+  border-right: 1px solid var(--grey) !important;
   top: 40px;
   padding-top: 2px;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+  z-index: 6;
 }
 
 .section--black {

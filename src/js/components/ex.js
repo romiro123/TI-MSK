@@ -43,7 +43,6 @@ document.querySelectorAll('.card-modal__btn').forEach((element) => {
       resultRange.innerHTML = paramsObj.range + 'м <sup>3</sup>';
       textResult.append(resultRange);
 
-
     } else {
       paramsObj.range = null
     }
