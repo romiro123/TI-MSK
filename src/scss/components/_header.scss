@@ -38,6 +38,7 @@
 
     @include mobile {
       position: static;
+      order: 1;
     }
   }
 
@@ -53,9 +54,9 @@
   }
 
   &__social {
-    @include mobile {
-      display: none;
-    }
+    // @include mobile {
+    //   display: none;
+    // }
   }
 
   &__hide {
