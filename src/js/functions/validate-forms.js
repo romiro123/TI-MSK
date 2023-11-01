@@ -59,7 +59,7 @@ export const validateForms = (selector, rules, afterSend) => {
     }
 
 
-    xhr.open('POST', 'mail.php', true);
+    xhr.open('POST', '/wp-content/themes/ti-stolica/mail.php', true);
     xhr.send(formData);
     ev.target.reset();
   })
