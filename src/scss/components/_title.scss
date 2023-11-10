@@ -69,13 +69,16 @@
 
 .subtitle {
   font-family: AdventPro;
-  font-size: 28px;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
 
 
-  @include tablet {
-    font-size: 24px;
-    font-weight: 600;
-  }
+
+  // @include tablet {
+  //   font-size: 24px;
+  //   font-weight: 600;
+  // }
 
   @include small-tablet {
     font-size: 22px;

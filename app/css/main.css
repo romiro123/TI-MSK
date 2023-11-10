@@ -514,13 +514,9 @@ p {
 
 .subtitle {
   font-family: AdventPro;
-  font-size: 28px;
-}
-@media (max-width: 1024px) {
-  .subtitle {
-    font-size: 24px;
-    font-weight: 600;
-  }
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 @media (max-width: 768px) {
   .subtitle {
@@ -1224,8 +1220,8 @@ p {
 .hero__img {
   width: 100%;
   height: 100%;
-  -webkit-filter: brightness(85%);
-  filter: brightness(85%);
+  -webkit-filter: brightness(75%);
+  filter: brightness(75%);
 }
 .hero__count {
   display: -webkit-inline-box;
@@ -1404,15 +1400,19 @@ p {
   }
 }
 .catalog__card-inner {
-  border: 1px solid #bfbdbd;
   border-radius: 10px;
 }
 .catalog__card-img {
-  height: 100%;
-  width: 100%;
   border-radius: 10px;
-  -webkit-filter: opacity(0.8);
-  filter: opacity(0.8);
+  -webkit-filter: brightness(80%);
+  filter: brightness(80%);
+  position: absolute;
+  left: -5%;
+  top: -5%;
+  width: 110%;
+  height: 110%;
+  /**/
+  max-width: none;
 }
 .catalog__card-content {
   position: absolute;
