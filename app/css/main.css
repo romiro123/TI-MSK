@@ -1220,8 +1220,8 @@ p {
 .hero__img {
   width: 100%;
   height: 100%;
-  -webkit-filter: brightness(75%);
-  filter: brightness(75%);
+  -webkit-filter: brightness(85%);
+  filter: brightness(85%);
 }
 .hero__count {
   display: -webkit-inline-box;
@@ -1627,7 +1627,6 @@ p {
   width: 36%;
   height: auto;
   border-radius: 10px;
-  border: 1px solid var(--grey);
   background-color: rgba(17, 24, 28, 0.8);
 }
 @media (max-width: 1024px) {

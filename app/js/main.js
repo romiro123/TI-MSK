@@ -193,13 +193,15 @@ const scroll = new (smooth_scroll__WEBPACK_IMPORTED_MODULE_0___default())('a[hre
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var atropos__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! atropos */ "./node_modules/atropos/atropos.mjs");
 
-document.querySelectorAll('.catalog__card').forEach(element => {
-  (0,atropos__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    el: element,
-    shadow: false,
-    activeOffset: 100
+if (window.innerWidth > 1025) {
+  document.querySelectorAll('.catalog__card').forEach(element => {
+    (0,atropos__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      el: element,
+      shadow: false,
+      activeOffset: 200
+    });
   });
-});
+}
 
 /***/ }),
 
@@ -409,13 +411,6 @@ __webpack_require__.r(__webpack_exports__);
 swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Navigation, swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay, swiper__WEBPACK_IMPORTED_MODULE_0__.Grid, swiper__WEBPACK_IMPORTED_MODULE_0__.EffectCoverflow]);
 const swiperHero = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--hero', {
   slidesPerView: 1,
-  // spaceBetween: 30,
-  // speed: 3000,
-  // autoplay: {
-  //   delay: 1,
-  //   disableOnInteraction: false,
-  //   enabled: true,
-  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
@@ -424,12 +419,14 @@ const swiperHero = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--
     el: ".swiper-pagination--bottom",
     type: "progressbar"
   },
+  speed: 3000,
+  autoplay: {
+    delay: 5000
+  },
   loop: true
 });
 const swiperCompanies = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--companies', {
-  // slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
   grabCursor: true,
   breakpoints: {
     320: {
@@ -438,12 +435,15 @@ const swiperCompanies = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swi
     576: {
       slidesPerView: 3
     }
-  }
+  },
+  speed: 1000,
+  autoplay: {
+    delay: 4000
+  },
+  loop: true
 });
 const swiperClients = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--clients', {
-  // slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
   grabCursor: true,
   breakpoints: {
     320: {
@@ -452,11 +452,15 @@ const swiperClients = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swipe
     576: {
       slidesPerView: 3
     }
-  }
+  },
+  speed: 3000,
+  autoplay: {
+    delay: 4000
+  },
+  loop: true
 });
 const swiperLizing = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--lizing', {
   slidesPerView: 2,
-  loop: true,
   grabCursor: true,
   navigation: {
     nextEl: '.lizing__btn-next',
@@ -469,7 +473,12 @@ const swiperLizing = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper
     576: {
       slidesPerView: 2
     }
-  }
+  },
+  speed: 1000,
+  autoplay: {
+    delay: 3000
+  },
+  loop: true
 });
 const swiperProject = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--project', {
   slidesPerView: 3,
@@ -507,19 +516,22 @@ const swiperNews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  loop: true,
   slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
     depth: 100,
     modifier: 2.5
-  }
+  },
+  speed: 1500,
+  autoplay: {
+    delay: 3000
+  },
+  loop: true
 });
 const swiperReviews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swiper--reviews', {
   slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
   navigation: {
     nextEl: '.reviews__btn-next',
     prevEl: '.reviews__btn-prev'
@@ -534,7 +546,12 @@ const swiperReviews = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.swipe
     576: {
       slidesPerView: 3
     }
-  }
+  },
+  speed: 3000,
+  autoplay: {
+    delay: 5000
+  },
+  loop: true
 });
 
 /***/ }),

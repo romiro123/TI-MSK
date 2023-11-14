@@ -4,13 +4,6 @@ Swiper.use([Navigation, Pagination, Autoplay, Grid, EffectCoverflow]);
 
 const swiperHero = new Swiper('.swiper--hero', {
   slidesPerView: 1,
-  // spaceBetween: 30,
-  // speed: 3000,
-  // autoplay: {
-  //   delay: 1,
-  //   disableOnInteraction: false,
-  //   enabled: true,
-  // },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -19,13 +12,15 @@ const swiperHero = new Swiper('.swiper--hero', {
     el: ".swiper-pagination--bottom",
     type: "progressbar",
   },
+  speed: 3000,
+  autoplay: {
+    delay: 5000,
+  },
   loop: true,
 });
 
 const swiperCompanies = new Swiper('.swiper--companies', {
-  // slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
   grabCursor: true,
   breakpoints: {
     320: {
@@ -34,12 +29,16 @@ const swiperCompanies = new Swiper('.swiper--companies', {
     576: {
       slidesPerView: 3,
     }
-  }
+  },
+  speed: 1000,
+  autoplay: {
+    delay: 4000,
+  },
+  loop: true,
 });
+
 const swiperClients = new Swiper('.swiper--clients', {
-  // slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
   grabCursor: true,
   breakpoints: {
     320: {
@@ -48,12 +47,16 @@ const swiperClients = new Swiper('.swiper--clients', {
     576: {
       slidesPerView: 3,
     }
-  }
+  },
+  speed: 3000,
+  autoplay: {
+    delay: 4000,
+  },
+  loop: true,
 });
 
 const swiperLizing = new Swiper('.swiper--lizing', {
   slidesPerView: 2,
-  loop: true,
   grabCursor: true,
   navigation: {
     nextEl: '.lizing__btn-next',
@@ -66,7 +69,12 @@ const swiperLizing = new Swiper('.swiper--lizing', {
     576: {
       slidesPerView: 2,
     }
-  }
+  },
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
 });
 
 const swiperProject = new Swiper('.swiper--project', {
@@ -99,21 +107,25 @@ const swiperProject = new Swiper('.swiper--project', {
       slidesPerView: 3,
       slidesPerGroup: 3,
     }
-  }
+  },
 });
 
 const swiperNews = new Swiper('.swiper--news', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
-  loop: true,
   slidesPerView: 'auto',
   coverflowEffect: {
     rotate: 0,
     stretch: 0,
     depth: 100,
     modifier: 2.5,
-  }
+  },
+  speed: 1500,
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
 });
 
 
@@ -121,7 +133,6 @@ const swiperNews = new Swiper('.swiper--news', {
 const swiperReviews = new Swiper('.swiper--reviews', {
   slidesPerView: 3,
   spaceBetween: 30,
-  loop: true,
   navigation: {
     nextEl: '.reviews__btn-next',
     prevEl: '.reviews__btn-prev',
@@ -136,5 +147,10 @@ const swiperReviews = new Swiper('.swiper--reviews', {
     576: {
       slidesPerView: 3,
     }
-  }
+  },
+  speed: 3000,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
 });
