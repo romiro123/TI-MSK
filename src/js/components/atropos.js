@@ -5,7 +5,7 @@ if (window.innerWidth > 1025) {
     Atropos({
       el: element,
       shadow: false,
-      activeOffset: 200,
+      activeOffset: 100,
     });
   })
 }
